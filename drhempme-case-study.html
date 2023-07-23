@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./nav-style.css" />
+    <link rel="stylesheet" href="./case-studies.css" />
+    <link rel="stylesheet" href="./contact-me.css" />
+
+    <!-- Cabin font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cabin+Condensed:wght@700&family=Cabin:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Ohno Blazeface font -->
+    <link href="https://use.typekit.net/bfc4ata.css" rel="stylesheet" />
+
+    <title>Fayrouz Portfolio</title>
+  </head>
+  <body>
+    <!--Hero section-->
+    <section>
+      <div class="hero-sec">
+        <nav class="btn-font">
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="#">About me</a></li>
+            <li><a href="#">Resume</a></li>
+          </ul>
+          <div class="logo">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="54"
+              height="54"
+              viewBox="0 0 54 54"
+              fill="none"
+            >
+              <circle cx="27" cy="27" r="27" fill="#D9D9D9" />
+            </svg>
+          </div>
+          <div class="action-sec">
+            <button class="btn btn-secondary" type="button">
+              Quote a mission
+            </button>
+          </div>
+        </nav>
+      </div>
+    </section>
+
+    <!--Work section-->
+    <section class="work-sec">
+      <div class="main-width project-container">
+        <div class="project-info">
+          <h5 class="project-title subtitle-1-lg blue-font">
+            UI Designer - UX Researcher
+          </h5>
+          <div class="project-main-info">
+            <h2 class="project-name title-1-lg">RAKBank</h2>
+            <p class="project-description paragraph-1-lg">
+              Rethinking and perfecting the information consent and opt-in
+              confirmation mobile experience.
+            </p>
+          </div>
+        </div>
+        <div class="project-image">
+          <img
+            src="./images/RakBank.webp"
+            alt="project mockup"
+            loading="lazy"
+          />
+        </div>
+      </div>
+      <div class="main-width project-data-sec">
+        <div class="project-overview flex-column gap-24">
+          <h2 class="title-3-lg">Overview</h2>
+          <p class="paragraph-1-lg">
+            The consent process involves obtaining users' explicit permission to
+            collect and utilize their personal and financial data, as well as
+            enabling them to customize their preferences for various banking
+            services and features.<br />
+            100% of users will be required to complete this form in order to
+            gain access to the mobile app.
+          </p>
+        </div>
+        <div class="project-info">
+          <div class="flex-column gap-24">
+            <h2 class="title-3-lg">My Role</h2>
+            <div class="paragraph-1-lg">
+              UX Design, Research, Usability Testing, Visual Design
+            </div>
+          </div>
+          <div class="flex-column gap-24">
+            <h2 class="title-3-lg">Duration</h2>
+            <div class="paragraph-1-lg">6 months</div>
+          </div>
+        </div>
+      </div>
+      <div class="main-width project-data-sec">
+        <h2 class="title-3-lg">Challenge</h2>
+        <p class="paragraph-1-lg">
+          How might we create an opt-in process to create a seamless and
+          user-friendly experience within the mobile application?
+        </p>
+      </div>
+      <div class="main-width project-data-sec">
+        <h2 class="title-3-lg">Problem Statement</h2>
+        <div class="flex-column gap-24">
+          <p class="paragraph-1-lg">
+            The challenge lies in designing a consent process that meets the
+            requirements of the app while ensuring a seamless and secure user
+            experience. It was also challenging to strike a balance between
+            legal compliance and user-centricity.
+          </p>
+          <h5 class="paragraph-1-lg">1. Inability to modify consent choices</h5>
+          <p class="subtitle-1-lg">
+            The first issue is the lack of flexibility for users to revisit and
+            change their consent choices. It was found that there was no clear
+            mechanism to revisit and modify consent choices on the spot, which
+            may lead to users experiencing a sense of being locked into their
+            initial decisions.
+          </p>
+          <div class="qoute-sec">
+            <p class="subtitle-1-lg">
+              “I made a mistake with my consent choices, but found that there's
+              no way to correct it. I felt stuck with my initial decision.”
+            </p>
+            <div class="subtitle-1-lg">- User A</div>
+          </div>
+          <h5 class="paragraph-1-lg">2. Unclear confirmation process</h5>
+          <p class="subtitle-1-lg">
+            Users need a clear and easily accessible button or interaction that
+            confirms their choices. If the confirmation process is ambiguous or
+            hidden within the interface.
+          </p>
+          <div class="qoute-sec">
+            <p class="subtitle-1-lg">
+              “The consent process is a bit confusing. I thought I confirmed my
+              choices, but then I realized I missed the confirmation button.”
+            </p>
+            <div class="subtitle-1-lg">- User B</div>
+          </div>
+          <h5 class="paragraph-1-lg">
+            3. No clear important information display
+          </h5>
+          <p class="subtitle-1-lg">
+            Users feel like they require additional context, explanations, or
+            details about the implications of their consent choices to be able
+            to correctly answer the questions.
+          </p>
+        </div>
+      </div>
+
+      <div class="main-width project-data-sec">
+        <h2 class="title-3-lg">Empathy Map</h2>
+        <div class="flex-column gap-24">
+          <div class="empathy-map-img-sec">
+            <img src="./images/empathy-map.png" alt="empathy map" />
+          </div>
+          <div class="empathy-map-data">
+            <div>
+              <h5 class="paragraph-1-lg">Pain Points</h5>
+              <ul class="subtitle-1-lg">
+                <li>
+                  Lack of clarity and understanding in the consent process.
+                </li>
+                <li>Difficulty in modifying consent choices later on.</li>
+                <li>Lengthy and confusing consent forms.</li>
+                <li>Fear of data misuse or privacy breaches.</li>
+                <li>
+                  Uncertainty about the legal implications of consent choices.
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h5 class="paragraph-1-lg">Needs</h5>
+              <ul class="subtitle-1-lg">
+                <li>
+                  Clear and concise explanations of the consent process and its
+                  implications.
+                </li>
+                <li>
+                  Transparency in how data is collected, used, and shared within
+                  the app.
+                </li>
+                <li>
+                  Control and customization options to align with personal
+                  preferences.
+                </li>
+                <li>
+                  Assurance that the app and bank are compliant with privacy
+                  regulations.
+                </li>
+                <li>
+                  Easy and accessible ways to review and modify consent choices.
+                </li>
+                <li>
+                  Confidence that the app respects and safeguards user data.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container pg-purple">
+        <div class="main-width project-data-sec">
+          <h2 class="title-3-lg">Discovery</h2>
+          <div class="flex-column gap-24">
+            <h5 class="paragraph-1-lg">
+              We unearthed useful insights through analyzing usage data and
+              engaging in user research. Here are the key findings:
+            </h5>
+            <ul class="subtitle-1-lg">
+              <li>
+                A majority of 61% of users opt for using the mobile app instead
+                of the web dashboard to access their banking info.
+              </li>
+              <li>
+                The heat map revealed that users did not interact with the
+                important information section. As a result, they were unaware of
+                the legal details they were getting themselves into.
+              </li>
+              <li>
+                Based on user interviews, it was found that 2 out of 5 (40%) of
+                the users encountered difficulty in accessing the confirmation
+                button.
+              </li>
+              <li>
+                During the user research sessions, it was observed that some
+                participants exhibited a natural inclination to close any pop
+                ups. As a result, they inadvertently closed the consent form and
+                became confused about the subsequent steps they needed to take
+                in their journey. It was like a major "Uh-oh, now what?" moment
+                for them.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="main-width project-data-sec">
+          <h2 class="title-3-lg">
+            Ideation & Implementation of UX Suggestions
+          </h2>
+          <div class="flex-column gap-24">
+            <div class="project-img-sec">
+              <img
+                src="./images/wireframe-1.png"
+                alt="project wireframe"
+                loading="lazy"
+              />
+              <img
+                src="./images/wire-frame-2.png"
+                alt="project wireframe"
+                loading="lazy"
+              />
+            </div>
+            <p class="subtitle-1-lg">
+              It was vital to me to ensure that all user problems were solved
+              suring this phase. I made sure to offer users the ability to
+              revisit and change their consent choices at any time using a
+              simple back button. I understand that users have the opportunity
+              to modify their preferences at any time through settings, but it
+              is likely that they are too lazy to do so. It’s simply frustrating
+              not being able to change previous choices on the spot.
+              <br /><br />To confirm the user's choices, I used a clear and
+              easily accessible switch element for yes/no questions. This should
+              help condense the appearance of the questions, making them look
+              less intimidating. It should prompt users to finish the form
+              quicker because they perceive the form as smaller. <br /><br />
+              To address the issue with the ambiguity of the legal information,
+              as a part of the journey itself, I showed important information in
+              a seprate page rather than having it hidden under the CTA.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="main-width project-data-sec">
+        <h2 class="title-3-lg">Polish</h2>
+
+        <div class="flex-column gap-24">
+          <p class="subtitle-1-lg">
+            After a little bit of back and fourth with the PM and legal team, I
+            polished the agreed upon wireframes.
+          </p>
+          <div class="project-img-sec">
+            <img
+              src="./images/rak-polish-1.png"
+              alt="project wireframe"
+              loading="lazy"
+            />
+            <img
+              src="./images/rak-polish-2.png"
+              alt="project wireframe"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="container pg-purple">
+        <div class="main-width project-data-sec">
+          <h2 class="title-3-lg">Results and Personal Learnings</h2>
+          <div class="flex-column gap-24">
+            <h5 class="paragraph-1-lg">UX Results</h5>
+            <ul class="subtitle-1-lg">
+              <li>
+                In follow-up interviews, users had improved comprehension of
+                what exactly they were consenting to.
+              </li>
+              <li>
+                Users expressed positive feedback towards the new switch method,
+                resulting in increased interaction and engagement with the
+                consent screens.
+              </li>
+              <li>
+                100% of users are now able to easily identify and locate the
+                confirmation CTA without any difficulties.
+              </li>
+            </ul>
+            <h5 class="paragraph-1-lg">Personal Learnings</h5>
+            <ul class="subtitle-1-lg">
+              <li>
+                This was the first time I got to work alongside a legal team.
+                Although it was challenging keeping up with their requests and
+                modifications, I appreciate the opportunity to interpret their
+                inputs from a UX standpoint and properly integrate them into the
+                mobile app.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-width other-projects-sec">
+        <a href="./case-study.html"
+          ><div class="flex-column gap-24">
+            <h5 class="project-title subtitle-1-lg blue-font">
+              UI Designer - UX Researcher
+            </h5>
+            <h2 class="project-name title-1-lg">RAKBank</h2>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="141"
+              height="22"
+              viewBox="0 0 141 22"
+              fill="none"
+            >
+              <path
+                d="M19.75 19.1113L2 11.3613M2 11.3613L19.75 2.36133M2 11.3613H139"
+                stroke="black"
+                stroke-width="4"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg></div
+        ></a>
+        <a href="./case-study.html">
+          <div class="flex-column gap-24">
+            <h5 class="project-title subtitle-1-lg blue-font">
+              UI Designer - UX Researcher
+            </h5>
+            <h2 class="project-name title-1-lg">RAKBank</h2>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="141"
+              height="22"
+              viewBox="0 0 141 22"
+              fill="none"
+            >
+              <path
+                d="M121.25 2.36133L139 10.1113M139 10.1113L121.25 19.1113M139 10.1113L2 10.1113"
+                stroke="black"
+                stroke-width="4"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg></div
+        ></a>
+      </div>
+    </section>
+
+    <!--contact me section-->
+    <section class="contact-me-wrapper">
+      <div class="contact-me-sec main-width">
+        <div class="title-1-lg white-font">
+          Let’s team up.<br />
+          One <span class="line-through">badass</span> design at a time.
+        </div>
+        <button class="btn btn-primary" type="button">Quote a mission</button>
+      </div>
+    </section>
+  </body>
+</html>

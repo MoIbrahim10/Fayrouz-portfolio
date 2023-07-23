@@ -1,0 +1,282 @@
+/* ****************************** */
+/* hero section styles */
+
+.black-hero {
+  background: var(--color-black);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 56px 0 0 0;
+  position: relative;
+  height: 760px;
+}
+
+.pink-hero {
+  background: var(--color-pink-light);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0;
+}
+
+
+.hero-title {
+  color: var(--color-pink-light);
+  margin-bottom: 64px;
+}
+
+.hero-title-gradient {
+  width: fit-content;
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
+  background: var(--color-gradient-1);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+
+.hero-image {
+  position: absolute;
+  right: 0;
+  top: 48px;
+  z-index: 2;
+}
+
+
+@media screen and (max-width: 1220px) {
+  .black-hero {
+    justify-content: flex-start;
+  }
+
+  .main-title-1-lg {
+    font-size: 80px;
+  }
+
+  .main-title-2-lg {
+    font-size: 48px;
+  }
+
+  .hero-title {
+    margin-top: 64px;
+    align-items: center;
+  }
+
+  .hero-title-pink-sec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  .hero-title-gradient {
+    align-items: center;
+  }
+
+  .hero-image {
+    top: 200px;
+  }
+
+  .hero-image img {
+    max-height: 750px;
+  }
+}
+
+/* ****************************** */
+/* work section styles */
+
+.work-sec {
+  padding: 114px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 64px;
+}
+
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+
+.project-container {
+  display: flex;
+  align-items: flex-end;
+  padding: 60px 0 0 38px;
+  box-shadow: 8px 8px var(--color-black), 8px 8px 0px 1px var(--color-black);
+  border: 2px solid var(--color-black);
+  overflow: hidden;
+}
+
+.project-info {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  margin-bottom: 36px;
+}
+
+.project-main-info {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.project-image {
+  max-width: 890px;
+  height: 600px;
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.comic img {
+  max-width: 100%;
+}
+
+/* ****************************** */
+/* about me section styles */
+.about-me-wrapper {
+  background: var(--color-pink-light);
+  padding: 144px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 144px;
+}
+
+.about-me-sec {
+  display: flex;
+  gap: 14px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 44px;
+}
+
+.about-me-title {
+  max-width: 625px;
+}
+
+
+
+.about-me-image {
+  position: relative;
+}
+
+.about-me-image .real-image, .about-me-image:hover .hover-image {
+  display: none;
+}
+
+.about-me-image:hover .real-image {
+  display: block;
+}
+
+
+
+
+.socials {
+  display: flex;
+  gap: 16px;
+}
+
+.social-account {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-blue);
+  border-radius: 1px;
+  border-right: 2px solid var(--color-black);
+  border-bottom: 2px solid var(--color-black);
+  width: 64px;
+  height: 64px;
+
+}
+
+
+
+/* **************************** */
+/* scroll style */
+.news-ticker-sec {
+  overflow: hidden;
+}
+
+.news-ticker-sec .scroll, .news-ticker-sec .reverse-scroll {
+  width: 360%;
+  display: flex;
+
+}
+
+.news-ticker-sec .scroll {
+  animation: scroll 26s linear infinite;
+  animation-direction: alternate;
+}
+
+.news-ticker-sec .reverse-scroll {
+  animation: reverse-scroll 26s linear infinite;
+  animation-direction: alternate;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes reverse-scroll {
+  0% {
+    transform: translateX(-50%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.news-ticker-sec .scroll:hover {
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+}
+
+/* **************************** */
+
+
+.dribbble-sec {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+
+.dribbble-shots,
+.dribbble-shots #shots {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.shot-container {
+  width: 382px;
+  height: 240px;
+  border: 2px solid var(--color-black);
+  background: var(--color-white);
+}
+
+.shot-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
