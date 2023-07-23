@@ -19,6 +19,7 @@
   align-items: center;
   justify-content: center;
   padding: 40px 0;
+  height: 300px;
 }
 
 
@@ -52,12 +53,8 @@
     justify-content: flex-start;
   }
 
-  .main-title-1-lg {
-    font-size: 80px;
-  }
-
-  .main-title-2-lg {
-    font-size: 48px;
+  .pink-hero {
+    justify-content: flex-end;
   }
 
   .hero-title {
@@ -77,11 +74,11 @@
   }
 
   .hero-image {
-    top: 200px;
+    top: 235px;
   }
 
   .hero-image img {
-    max-height: 750px;
+    max-height: 800px;
   }
 }
 
@@ -100,15 +97,18 @@
   display: flex;
   flex-direction: column;
   gap: 64px;
+  padding: 0 40px;
+  max-width: 100%;
 }
 
 .project-container {
   display: flex;
-  align-items: flex-end;
+  align-items: stretch;
   padding: 60px 0 0 38px;
   box-shadow: 8px 8px var(--color-black), 8px 8px 0px 1px var(--color-black);
   border: 2px solid var(--color-black);
   overflow: hidden;
+
 }
 
 .project-info {
@@ -116,8 +116,23 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 56px;
+}
+
+.project-category {
+  border-radius: 54px;
+  border: 2px solid var(--color-black);
+  background: var(--color-blue-light);
+  padding: 13px 32px;
+  box-shadow: 4px 4px var(--color-black);
+}
+
+.project-info-data {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   gap: 32px;
-  margin-bottom: 36px;
 }
 
 .project-main-info {
@@ -127,18 +142,32 @@
 }
 
 .project-image {
-  max-width: 890px;
+  width: 100%;
   height: 600px;
 }
 
 .project-image img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: fill;
 }
 
 .comic img {
   max-width: 100%;
+}
+
+@media screen and (max-width: 1220px) {
+
+  .project-container {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+  }
+
+  .project-image {
+    max-width: 100%;
+    height: 600px;
+  }
 }
 
 /* ****************************** */
@@ -203,7 +232,13 @@
 
 }
 
+.social-account:hover {
+  background: var(--color-blue-light);
+}
 
+.social-account:hover svg path {
+  fill: var(--color-black);
+}
 
 /* **************************** */
 /* scroll style */

@@ -4,7 +4,6 @@
   box-sizing: border-box;
 }
 
-
 :root {
   /* fonts */
   --main-font: "ohno-blazeface";
@@ -14,7 +13,11 @@
 
   /* font sizes */
   --main-title-1-lg: 208px;
+  --main-title-1-md: 116px;
+  --main-title-1-sm: 80px;
   --main-title-2-lg: 96px;
+  --main-title-2-md: 64px;
+  --main-title-2-sm: 48px;
   --title-1-lg: 80px;
   --title-2-lg: 64px;
   --title-3-lg: 40px;
@@ -62,27 +65,27 @@ body {
 
 
 /* font styles */
-.main-title-1-lg {
+.main-title-1 {
   font-family: var(--main-font), sans-serif;
   font-size: var(--main-title-1-lg);
   font-weight: 300;
   line-height: 54%;
 }
 
-.main-title-2-lg {
+.main-title-2 {
   font-family: var(--main-font), sans-serif;
   font-size: var(--main-title-2-lg);
   font-weight: 100;
 }
 
-.title-1-lg {
+.title-1 {
   font-family: var(--main-font), sans-serif;
   font-size: var(--title-1-lg);
   font-weight: 100;
-  line-height: 92%;
+  line-height: 104%;
 }
 
-.title-2-lg {
+.title-2 {
   font-family: var(--main-font), sans-serif;
   font-size: var(--title-2-lg);
   font-weight: 100;
@@ -92,34 +95,6 @@ body {
   font-family: var(--main-font), sans-serif;
   font-size: var(--title-3-lg);
   font-weight: 100;
-}
-
-.comic-1 {
-  font-family: var(--tertary-font), sans-serif;
-  font-size: var(--comic-1-lg);
-  font-weight: 400;
-  line-height: 0%;
-}
-
-.comic-2 {
-  font-family: var(--tertary-font), sans-serif;
-  font-size: var(--comic-2-lg);
-  font-weight: 400;
-  line-height: 97%
-}
-
-.comic-3 {
-  font-family: var(--tertary-font), sans-serif;
-  font-size: var(--comic-3-lg);
-  font-weight: 400;
-  line-height: 97%
-}
-
-.comic-4 {
-  font-family: var(--tertary-font), sans-serif;
-  font-size: var(--comic-4-lg);
-  font-weight: 400;
-  line-height: 97%
 }
 
 .subtitle-1 {
@@ -142,6 +117,28 @@ body {
   color: var(--color-white);
 }
 
+@media screen and (max-width: 1300px) {
+  .main-title-1 {
+    font-size: var(--main-title-1-md);
+    line-height: 70%;
+
+  }
+
+  .main-title-2 {
+    font-size: var(--main-title-2-md);
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .main-title-1 {
+    font-size: var(--main-title-1-sm);
+  }
+
+  .main-title-2 {
+    font-size: var(--main-title-2-sm);
+  }
+}
+
 /* buttons styles */
 .btn {
   font-family: var(--secondary-font);
@@ -154,30 +151,38 @@ body {
   cursor: pointer;
 }
 
-.btn:active {
+/* .btn:active {
   box-shadow: none;
   transform: translate(3px, 3px);
-}
+} */
 
 
 .btn-primary {
   background: var(--color-blue);
-  border: 1px solid var(--color-black);
+  border: 2px solid var(--color-black);
 }
 
 .btn-secondary {
   background: var(--color-black);
-  border: 1px solid var(--color-black);
+  border: 2px solid var(--color-black);
 }
 
 .btn-gradient-1 {
   background: var(--color-gradient-1);
-  border: 1px solid var(--color-gradient-1);
+  border: 2px solid var(--color-gradient-1);
 }
 
 .btn-gradient-1 {
   background: var(--color-gradient-2);
-  border: 1px solid var(--color-gradient-2);
+  border: 2px solid var(--color-gradient-2);
+}
+
+.btn-secondary:hover, .btn-secondary:active {
+  background: var(--color-blue);
+}
+
+.btn-primary:hover, .btn-primary:active {
+  background: var(--color-gradient-1);
 }
 
 
@@ -192,6 +197,8 @@ body {
     padding: 0px 40px;
   }
 }
+
+
 
 .flex-column {
   display: flex;

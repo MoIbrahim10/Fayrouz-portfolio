@@ -31,9 +31,19 @@ nav li {
   display: inline;
 }
 
+
+
 nav a {
   text-decoration: none;
   color: var(--color-white);
+}
+
+nav a:hover {
+  background: var(--color-gradient-1);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
 }
 
 .nav .logo {
@@ -49,6 +59,7 @@ nav button {
 
 .action-sec {
   height: 80px;
+  z-index: 100;
 }
 
 
