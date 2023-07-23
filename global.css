@@ -147,15 +147,9 @@ body {
   text-transform: uppercase;
   padding: 20px 64px;
   color: var(--color-white);
-  box-shadow: 8px 8px var(--color-white), 8px 8px 0px 1px var(--color-black);
+  box-shadow: 8px 8px var(--color-white), 8px 8px 0px 2px var(--color-black);
   cursor: pointer;
 }
-
-/* .btn:active {
-  box-shadow: none;
-  transform: translate(3px, 3px);
-} */
-
 
 .btn-primary {
   background: var(--color-blue);
@@ -185,6 +179,11 @@ body {
   background: var(--color-gradient-1);
 }
 
+
+.btn:disabled {
+  background: #989898;
+  cursor: not-allowed;
+}
 
 /* helper classes */
 .main-width {
