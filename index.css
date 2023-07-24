@@ -1,6 +1,6 @@
 /* ****************************** */
 /* hero section styles */
-html {
+body {
   position: relative;
   overflow-x: hidden;
 }
@@ -46,7 +46,8 @@ html {
 .hero-image {
   height: 1330px;
   position: absolute;
-  right: -170px;
+  /* right: -170px; */
+  left: 500px;
   top: 48px;
   z-index: 2;
   overflow: hidden;
