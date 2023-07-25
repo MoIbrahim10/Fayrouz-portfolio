@@ -14,3 +14,7 @@
   align-items: flex-start;
   gap: 48px;
 }
+
+@media screen and (max-width: 390px) {
+  .contact-me-sec {}
+}

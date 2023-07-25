@@ -46,8 +46,7 @@ body {
 .hero-image {
   height: 1330px;
   position: absolute;
-  /* right: -170px; */
-  left: 500px;
+  left: 33%;
   top: 48px;
   z-index: 2;
   overflow: hidden;
@@ -301,11 +300,6 @@ body {
     transform: translateX(0%);
   }
 }
-
-/* .news-ticker-sec .scroll:hover {
-  -webkit-animation-play-state: paused;
-  animation-play-state: paused;
-} */
 
 /* **************************** */
 

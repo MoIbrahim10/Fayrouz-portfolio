@@ -12,22 +12,23 @@
 
 
   /* font sizes */
-  --main-title-1-lg: 208px;
+  --main-title-1: 13vw;
   --main-title-1-md: 116px;
   --main-title-1-sm: 80px;
-  --main-title-2-lg: 96px;
+  --main-title-2: 6vw;
   --main-title-2-md: 64px;
   --main-title-2-sm: 48px;
   --title-1-lg: 80px;
+  --title-1-sm: 64px;
   --title-2-lg: 64px;
+  --title-2-sm: 40px;
   --title-3-lg: 40px;
-  --comic-1-lg: 85.54px;
-  --comic-2-lg: 36px;
-  --comic-3-lg: 32px;
-  --comic-4-lg: 28px;
+  --title-3-sm: 28px;
   --subtitle-1-lg: 28px;
   --paragraph-1-lg: 28px;
-  --button-fn: 24px;
+  --paragraph-1-sm: 24px;
+  --button-fn-lg: 24px;
+  --button-fn-sm: 16px;
 
   /* Colors */
   --color-white: #FFFFFF;
@@ -67,45 +68,45 @@ body {
 /* font styles */
 .main-title-1 {
   font-family: var(--main-font), sans-serif;
-  font-size: var(--main-title-1-lg);
+  font-size: var(--main-title-1);
   font-weight: 300;
   line-height: 54%;
 }
 
 .main-title-2 {
   font-family: var(--main-font), sans-serif;
-  font-size: var(--main-title-2-lg);
+  font-size: var(--main-title-2);
   font-weight: 100;
 }
 
 .title-1 {
   font-family: var(--main-font), sans-serif;
-  font-size: var(--title-1-lg);
+  font-size: var(--title-1);
   font-weight: 100;
   line-height: 104%;
 }
 
 .title-2 {
   font-family: var(--main-font), sans-serif;
-  font-size: var(--title-2-lg);
+  font-size: var(--title-2);
   font-weight: 100;
 }
 
 .title-3 {
   font-family: var(--main-font), sans-serif;
-  font-size: var(--title-3-lg);
+  font-size: var(--title-3);
   font-weight: 100;
 }
 
 .subtitle-1 {
   font-family: var(--secondary-font), sans-serif;
-  font-size: var(--subtitle-1-lg);
+  font-size: var(--subtitle-1);
   font-weight: 400;
 }
 
 .paragraph-1 {
   font-family: var(--secondary-font), sans-serif;
-  font-size: var(--paragraph-1-lg);
+  font-size: var(--paragraph-1);
   font-weight: 700;
 }
 
@@ -117,7 +118,7 @@ body {
   color: var(--color-white);
 }
 
-@media screen and (max-width: 1300px) {
+/* @media screen and (max-width: 1300px) {
   .main-title-1 {
     font-size: var(--main-title-1-md);
     line-height: 70%;
@@ -127,9 +128,9 @@ body {
   .main-title-2 {
     font-size: var(--main-title-2-md);
   }
-}
+} */
 
-@media screen and (max-width: 920px) {
+/* @media screen and (max-width: 920px) {
   .main-title-1 {
     font-size: var(--main-title-1-sm);
   }
@@ -137,7 +138,29 @@ body {
   .main-title-2 {
     font-size: var(--main-title-2-sm);
   }
-}
+
+  .title-1 {
+    font-size: var(--title-2);
+  }
+} */
+/* @media screen and (max-width: 390px) {
+  .main-title-1 {
+    font-size: var(--main-title-1-sm);
+  }
+
+  .main-title-2 {
+    font-size: var(--main-title-2-sm);
+  }
+
+  .title-1 {
+    font-size: var(--title-2);
+  }
+
+  .main-width {
+    width: 100%;
+    padding: 0px 20px;
+  }
+} */
 
 /* buttons styles */
 .btn {
@@ -152,6 +175,7 @@ body {
 }
 
 .btn-primary {
+  position: relative;
   background: var(--color-blue);
   border: 2px solid var(--color-black);
 }
@@ -179,6 +203,23 @@ body {
   background: var(--color-gradient-1);
 }
 
+.btn-primary::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--color-gradient-1);
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 0.5s;
+}
+
+.btn-primary:hover::before, .btn-primary:active::before {
+  opacity: 1;
+}
+
 
 .btn:disabled {
   background: #989898;
@@ -194,6 +235,13 @@ body {
   .main-width {
     width: 100%;
     padding: 0px 40px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .main-width {
+    width: 100%;
+    padding: 0px 20px;
   }
 }
 
