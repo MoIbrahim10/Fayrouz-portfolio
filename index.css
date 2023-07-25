@@ -43,51 +43,49 @@ body {
 }
 
 
-.hero-image {
+.hero-image-container {
+  width: 983px;
   height: 1330px;
+
   position: absolute;
-  left: 33%;
-  top: 48px;
+  left: 280px;
+  top: 272px;
   z-index: 2;
-  overflow: hidden;
 }
 
-.hero-image img {
+.hero-image-wrapper {
+  position: relative;
+  width: 100%;
   height: 100%;
 }
 
+.hero-image-container img {
+  /* position: absolute; */
 
-@media screen and (max-width: 1220px) {
-  .black-hero {
-    justify-content: flex-start;
-  }
+  width: 80vw;
+  min-width: 390px;
+  min-height: 800px;
 
-  .pink-hero {
-    justify-content: flex-end;
-  }
-
-  .hero-title {
-    margin-top: 64px;
-    align-items: center;
-  }
-
-  .hero-title-pink-sec {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+  max-width: 983px;
+  max-height: 1330px;
 
 
-  .hero-title-gradient {
-    align-items: center;
-  }
+  object-fit: cover;
+  display: block;
+}
 
+
+@media screen and (min-width: 1440px) {
   .hero-image {
-    top: 235px;
+    width: 983px;
+    height: 1330px;
   }
+}
 
-  .hero-image img {
-    max-height: 800px;
+@media screen and (max-width: 390px) {
+  .hero-image {
+    width: 390px;
+    height: 800px;
   }
 }
 
@@ -106,7 +104,6 @@ body {
   display: flex;
   flex-direction: column;
   gap: 64px;
-  padding: 0 40px;
   max-width: 100%;
 }
 
@@ -147,12 +144,14 @@ body {
 .project-main-info {
   display: flex;
   flex-direction: column;
-  gap: 16px;
 }
 
+/* .project-main-info h5 {
+  margin-bottom: 16px;
+} */
+
 .project-image {
-  width: 100%;
-  height: 600px;
+  max-height: 600px;
 }
 
 .project-image img {
@@ -165,19 +164,7 @@ body {
   max-width: 100%;
 }
 
-@media screen and (max-width: 1220px) {
 
-  .project-container {
-    display: flex;
-    flex-direction: column;
-    padding: 24px;
-  }
-
-  .project-image {
-    max-width: 100%;
-    height: 600px;
-  }
-}
 
 /* ****************************** */
 /* about me section styles */
@@ -355,4 +342,165 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+
+
+/********************************************************/
+/* responsive */
+
+@media screen and (max-width: 1440px) and (min-width: 390px) {
+
+  .project-container {
+    transform: scale(90vw);
+  }
+}
+
+@media screen and (max-width: 390px) {
+
+  /* ****************************** */
+  /* hero section styles */
+  .black-hero {
+    justify-content: start;
+    gap: 64px;
+  }
+
+  .pink-hero {
+    align-items: flex-end;
+  }
+
+  .hero-image-container {
+
+    width: 610.179px;
+    height: 801.805px;
+
+    left: -182px;
+    top: 270px;
+  }
+
+  .hero-image-container img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .pink-hero {
+    justify-content: end;
+  }
+
+  .hero-title {
+    margin: 0
+  }
+
+  ;
+  /* ****************************** */
+  /* work section styles */
+
+  .work-sec {
+    padding: 88px 0;
+    gap: 50px;
+  }
+
+  .project-container {
+    flex-direction: column;
+    align-items: start;
+    padding: 24px 0 0 0;
+  }
+
+  .project-info {
+    padding: 0 24px;
+    width: 100%;
+    gap: 32px;
+    margin-bottom: 40px;
+  }
+
+  .project-title {
+    margin-bottom: 8px;
+  }
+
+  .project-main-info {
+    gap: 8px;
+  }
+
+  .project-image {
+    display: flex;
+  }
+
+  .comic {
+    padding: 0;
+  }
+
+
+  /* ****************************** */
+  /* about me section styles */
+  .about-me-wrapper {
+    padding: 88px 0;
+    gap: 88px;
+  }
+
+  .about-me-sec {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .info {
+    gap: 40px;
+  }
+
+
+  .about-me-image {
+    height: 100%;
+    width: 100%;
+    min-width: 0;
+    min-height: 0
+  }
+
+  .socials {
+    flex-wrap: wrap;
+  }
+
+
+  /* **************************** */
+  /* scroll style */
+
+
+  .news-ticker-sec .scroll, .news-ticker-sec .reverse-scroll {
+    width: 1130%;
+  }
+
+  /* **************************** */
+
+
+  .dribbble-sec {
+    gap: 40px;
+  }
+
+
+  #shots {
+    gap: 32px;
+  }
+
+  .shot-container {
+    min-width: 100%;
+  }
+
+
+  .dribbble-shots-action {
+    gap: 24px;
+  }
+
+  .dribbble-shots-action * {
+    min-height: 59px;
+  }
+
+  #prev * {}
+
+  #next {}
+
+  .dribbble-shots-action a, .dribbble-shots-action button {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
 }

@@ -1,6 +1,7 @@
 let shots = [];
 let indices = [0, 1, 2];
 
+
 async function fetchData() {
   const res = await fetch(
     'https://api.dribbble.com/v2/user/shots?access_token=71ea86ce6e4bd4f9d17a99feab8310d5e7053814da8ca251cbeb85026cf0e4fb'
