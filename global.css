@@ -12,12 +12,12 @@
 
 
   /* font sizes */
-  --main-title-1: 13vw;
-  --main-title-1-md: 116px;
-  --main-title-1-sm: 80px;
-  --main-title-2: 6vw;
-  --main-title-2-md: 64px;
-  --main-title-2-sm: 48px;
+  --main-title-1: 14vw;
+  --main-title-2: 7vw;
+  --main-title-1-lg: 208px;
+  --main-title-2-lg: 96px;
+
+
   --title-1-lg: 80px;
   --title-1-sm: 64px;
   --title-2-lg: 64px;
@@ -77,6 +77,16 @@ body {
   font-family: var(--main-font), sans-serif;
   font-size: var(--main-title-2);
   font-weight: 100;
+}
+
+@media screen and (min-width: 1440px) {
+  .main-title-1 {
+    font-size: var(--main-title-1-lg);
+  }
+
+  .main-title-2 {
+    font-size: var(--main-title-2-lg);
+  }
 }
 
 .title-1 {
