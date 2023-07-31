@@ -72,12 +72,16 @@ nav a {
   max-width: 412px;
 }
 
-.empathy-map-data {
+.split-screen-data {
   display: flex;
   gap: 24px;
 }
 
-.empathy-map-data div, div>ul {
+.split-screen-data>div {
+  flex: 1;
+}
+
+div>ul {
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -108,4 +112,50 @@ nav a {
 .other-projects-sec a {
   text-decoration: none;
   color: unset;
+}
+
+
+#comic-pic {
+  width: 100%;
+}
+
+.info-icon {
+  display: block;
+  margin-left: -10px;
+}
+
+.width-100 img {
+  width: 100%;
+}
+
+.boxes-container {
+  display: flex;
+  gap: 24px;
+}
+
+
+.pink-box {
+  flex: 1;
+  width: 266px;
+  padding: 16px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--color-pink-light);
+}
+
+.pink-box span {
+  text-align: center;
+}
+
+
+
+.bg-black .flex-row img {
+  width: 47%;
+}
+
+.image-container img {
+  width: 100%;
 }

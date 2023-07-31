@@ -20,326 +20,477 @@
     <!-- Ohno Blazeface font -->
     <link href="https://use.typekit.net/bfc4ata.css" rel="stylesheet" />
 
-    <title>Fayrouz Portfolio</title>
+    <!--Fav icon-->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicon-16x16.png"
+    />
+    <link rel="manifest" href="images/site.webmanifest" />
+    <title>Fayrouz Portfolio | drHempme case study</title>
   </head>
   <body>
     <!--Hero section-->
-    <section>
-      <div class="hero-sec">
-        <nav class="btn-font">
-          <ul>
+    <header class="hero-sec">
+      <nav class="main-width btn-font nav">
+        <ul id="nav-menu" class="nav-menu nav-menu-left">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="#about-me">About me</a></li>
+          <li><a href="#">Resume</a></li>
+        </ul>
+        <div class="logo">
+          <img src="./images/Logo black.png" alt="logo" />
+        </div>
+        <div class="nav-menu nav-menu-right action-sec">
+          <button class="btn btn-secondary" type="button">
+            Quote a mission
+          </button>
+        </div>
+      </nav>
+
+      <nav class="nav-mobile btn-font">
+        <div class="logo">
+          <img src="./images/Logo black.png" alt="logo" />
+        </div>
+        <button
+          id="hamburger-menu"
+          class="hamburger-menu"
+          aria-label="Menu"
+          aria-expanded="false"
+          aria-haspopup="true"
+          type="button"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="nav-expanded">
+          <ul class="nav-menu-mobile">
             <li><a href="./index.html">Home</a></li>
-            <li><a href="#">About me</a></li>
+            <li><a href="#about-me">About me</a></li>
             <li><a href="#">Resume</a></li>
+            <li>
+              <button class="btn btn-secondary" type="button">
+                Quote a mission
+              </button>
+            </li>
           </ul>
-          <div class="logo">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="54"
-              height="54"
-              viewBox="0 0 54 54"
-              fill="none"
-            >
-              <circle cx="27" cy="27" r="27" fill="#D9D9D9" />
-            </svg>
-          </div>
-          <div class="action-sec">
-            <button class="btn btn-secondary" type="button">
-              Quote a mission
-            </button>
-          </div>
-        </nav>
-      </div>
-    </section>
+        </div>
+      </nav>
+    </header>
 
     <!--Work section-->
     <section class="work-sec">
       <div class="main-width project-container">
         <div class="project-info">
-          <h5 class="project-title subtitle-1-lg blue-font">
+          <h5 class="project-title subtitle-1 pink-font">
             UI Designer - UX Researcher
           </h5>
           <div class="project-main-info">
-            <h2 class="project-name title-1-lg">RAKBank</h2>
-            <p class="project-description paragraph-1-lg">
-              Rethinking and perfecting the information consent and opt-in
-              confirmation mobile experience.
+            <h2 class="project-name title-1">DrHemp</h2>
+            <p class="project-description paragraph-1">
+              Revamping homepage to boost sales and conversions, while enhancing
+              usability.
             </p>
           </div>
         </div>
         <div class="project-image">
-          <img
-            src="./images/RakBank.webp"
-            alt="project mockup"
-            loading="lazy"
-          />
+          <img src="./images/Drhemp.webp" alt="project mockup" loading="lazy" />
         </div>
       </div>
       <div class="main-width project-data-sec">
         <div class="project-overview flex-column gap-24">
-          <h2 class="title-3-lg">Overview</h2>
-          <p class="paragraph-1-lg">
-            The consent process involves obtaining users' explicit permission to
-            collect and utilize their personal and financial data, as well as
-            enabling them to customize their preferences for various banking
-            services and features.<br />
-            100% of users will be required to complete this form in order to
-            gain access to the mobile app.
+          <h2 class="title-3">Overview</h2>
+          <p class="paragraph-1">
+            DrHempMe is an e-commerce website that offers a diverse selection of
+            CBD products that cater to different needs and preferences of its
+            customers and their use cases.<br /><br />
+
+            The main focus of this redesign is to improve the performance of the
+            website in terms of conversion rate and sales. By conducting a
+            thorough analysis of the website's current state, identifying areas
+            of improvement and implementing strategic changes, the goal is to
+            increase the number of visitors to the website who actually complete
+            a purchase.
           </p>
+          <a href="https://www.drhempme.ie/" target="_blank" rel="noopener">
+            <button type="button" class="btn btn-secondary">
+              see website
+            </button></a
+          >
         </div>
         <div class="project-info">
           <div class="flex-column gap-24">
-            <h2 class="title-3-lg">My Role</h2>
-            <div class="paragraph-1-lg">
-              UX Design, Research, Usability Testing, Visual Design
+            <h2 class="title-3">My Role</h2>
+            <div class="paragraph-1">
+              UX Research & Audit, Data Analysis, Setting KPIs, Competitive
+              Analysis, UX Suggestions, Visual UI Design
             </div>
           </div>
           <div class="flex-column gap-24">
-            <h2 class="title-3-lg">Duration</h2>
-            <div class="paragraph-1-lg">6 months</div>
+            <h2 class="title-3">Duration</h2>
+            <div class="paragraph-1">
+              3 months<br />(45 days to audit and UX research + 45 days of UI
+              design)
+            </div>
           </div>
         </div>
       </div>
-      <div class="main-width project-data-sec">
-        <h2 class="title-3-lg">Challenge</h2>
-        <p class="paragraph-1-lg">
-          How might we create an opt-in process to create a seamless and
-          user-friendly experience within the mobile application?
-        </p>
+      <div class="width-100">
+        <img src="images/drhempmewebsite.png" alt="" />
       </div>
+
       <div class="main-width project-data-sec">
-        <h2 class="title-3-lg">Problem Statement</h2>
+        <h2 class="title-3">Results</h2>
         <div class="flex-column gap-24">
-          <p class="paragraph-1-lg">
-            The challenge lies in designing a consent process that meets the
-            requirements of the app while ensuring a seamless and secure user
-            experience. It was also challenging to strike a balance between
-            legal compliance and user-centricity.
+          <p class="paragraph-1">
+            I totally get it - sharing my results right off the bat might raise
+            some eyebrows, but at the end of the day, businesses are all about
+            the bottom line, right? So why not just put the juicy stuff front
+            and center? It's what businesses really care about after all!!!
           </p>
-          <h5 class="paragraph-1-lg">1. Inability to modify consent choices</h5>
-          <p class="subtitle-1-lg">
-            The first issue is the lack of flexibility for users to revisit and
-            change their consent choices. It was found that there was no clear
-            mechanism to revisit and modify consent choices on the spot, which
-            may lead to users experiencing a sense of being locked into their
-            initial decisions.
+
+          <img src="images/Drhemp resuts.png" alt="" loading="lazy" />
+          <p class="paragraph-1">
+            In just three short months after the redesign, here are the
+            (seriously impressive) results this business experienced:
+          </p>
+          <div class="boxes-container">
+            <div class="pink-box">
+              <span class="title-2">+10.12% </span>
+              <span class="subtitle-1">increase in sales</span>
+            </div>
+            <div class="pink-box">
+              <span class="title-2">+2.16 </span>
+              <span class="subtitle-1">jump in conversion rate</span>
+            </div>
+            <div class="pink-box">
+              <span class="title-2">-35% </span>
+              <span class="subtitle-1">decrease in cart abandonment</span>
+            </div>
+          </div>
+          <p class="paragraph-1">
+            Now that you've seen the impact of good UX practices on sales, let's
+            dig into how I arrived at these winning conclusions and made
+            data-based decisions to boost conversion and enhance usability.
+          </p>
+        </div>
+      </div>
+
+      <div class="container bg-black">
+        <div class="main-width flex-row space-between">
+          <img src="images/Drhemp main page.png" alt="" />
+          <img src="images/Drhemp main menu.png" alt="" />
+        </div>
+      </div>
+
+      <div class="main-width project-data-sec">
+        <h2 class="title-3">Problem Statement</h2>
+        <div class="flex-column gap-24">
+          <h5 class="paragraph-1">1. High bounce rate</h5>
+          <p class="subtitle-1">
+            The website experiences a high bounce rate, indicating that many
+            visitors leave without engaging or converting. This suggests a need
+            to improve the website's design, content, and navigation to retain
+            visitors and guide them towards desired actions.
           </p>
           <div class="qoute-sec">
-            <p class="subtitle-1-lg">
-              “I made a mistake with my consent choices, but found that there's
-              no way to correct it. I felt stuck with my initial decision.”
+            <p class="subtitle-1">
+              <span class="info-icon">💡</span>
+              These aren’t actual conversions, just users who make it to the
+              demo booking page or the resource gate. Gathered, these CTAs lead
+              to only 21 clicks from 1,873 page views. This leaves major room
+              for improvement in this area.
             </p>
-            <div class="subtitle-1-lg">- User A</div>
           </div>
-          <h5 class="paragraph-1-lg">2. Unclear confirmation process</h5>
-          <p class="subtitle-1-lg">
-            Users need a clear and easily accessible button or interaction that
-            confirms their choices. If the confirmation process is ambiguous or
-            hidden within the interface.
-          </p>
           <div class="qoute-sec">
-            <p class="subtitle-1-lg">
-              “The consent process is a bit confusing. I thought I confirmed my
-              choices, but then I realized I missed the confirmation button.”
+            <p class="subtitle-1">
+              <span class="info-icon">💡</span>
+              A high bounce rate combined with a high average session duration
+              could mean that visitors are spending a lot of time on the site,
+              but not engaging with the content or completing any desired
+              actions (converting on a sale). This could indicate that the
+              website is providing valuable information, but not effectively
+              guiding visitors towards the desired conversion.
             </p>
-            <div class="subtitle-1-lg">- User B</div>
           </div>
-          <h5 class="paragraph-1-lg">
-            3. No clear important information display
+          <h5 class="paragraph-1">2. Little visitor retention</h5>
+          <p class="subtitle-1">
+            While returning visitors show higher engagement and conversion
+            rates, they make up only a small percentage of overall traffic. The
+            goal is to convert more new visitors into returning visitors by
+            offering incentives, personalized content, and utilizing email
+            marketing to stay in touch with visitors.
+          </p>
+
+          <h5 class="paragraph-1">
+            3. Who's our crowd? (target audience misalignment)
           </h5>
-          <p class="subtitle-1-lg">
-            Users feel like they require additional context, explanations, or
-            details about the implications of their consent choices to be able
-            to correctly answer the questions.
+          <p class="subtitle-1">
+            he majority of website visitors fall within the 25-44 age range and
+            slightly skew male, which seems to be a different crowd than we
+            want. Reevaluating marketing strategies is necessary to better reach
+            the desired market segment.
           </p>
+
+          <h5 class="paragraph-1">4. Homepage as both landing and exit page</h5>
+          <p class="subtitle-1">
+            Good & bad news. The homepage is the most popular landing,
+            indicating a strong online presence. However, it is also the most
+            popular exit page. There may be a lack of clear CTAs and compelling
+            content, leading visitors to exit without exploring further.
+          </p>
+          <h5 class="paragraph-1">5. Checkout page behavior</h5>
+          <p class="subtitle-1">
+            The behavior flow analysis shows that users are immediately
+            redirected to the checkout page after adding products to their
+            carts. While this can increase conversions, it may also cause some
+            users to leave without completing a purchase. I suggest giving users
+            the option to continue shopping so they can take their time and feel
+            more in control.
+          </p>
+          <img src="images/Drhemp page behavior.png" alt="" loading="lazy" />
         </div>
       </div>
 
-      <div class="main-width project-data-sec">
-        <h2 class="title-3-lg">Empathy Map</h2>
-        <div class="flex-column gap-24">
-          <div class="empathy-map-img-sec">
-            <img src="./images/empathy-map.png" alt="empathy map" />
-          </div>
-          <div class="empathy-map-data">
-            <div>
-              <h5 class="paragraph-1-lg">Pain Points</h5>
-              <ul class="subtitle-1-lg">
-                <li>
-                  Lack of clarity and understanding in the consent process.
-                </li>
-                <li>Difficulty in modifying consent choices later on.</li>
-                <li>Lengthy and confusing consent forms.</li>
-                <li>Fear of data misuse or privacy breaches.</li>
-                <li>
-                  Uncertainty about the legal implications of consent choices.
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h5 class="paragraph-1-lg">Needs</h5>
-              <ul class="subtitle-1-lg">
-                <li>
-                  Clear and concise explanations of the consent process and its
-                  implications.
-                </li>
-                <li>
-                  Transparency in how data is collected, used, and shared within
-                  the app.
-                </li>
-                <li>
-                  Control and customization options to align with personal
-                  preferences.
-                </li>
-                <li>
-                  Assurance that the app and bank are compliant with privacy
-                  regulations.
-                </li>
-                <li>
-                  Easy and accessible ways to review and modify consent choices.
-                </li>
-                <li>
-                  Confidence that the app respects and safeguards user data.
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
+      <div class="width-100">
+        <img src="images/drhempmewebsite2.png" alt="" />
       </div>
-      <div class="container pg-purple">
+
+      <div class="container bg-purple">
         <div class="main-width project-data-sec">
-          <h2 class="title-3-lg">Discovery</h2>
+          <h2 class="title-3">Competitive Analysis</h2>
           <div class="flex-column gap-24">
-            <h5 class="paragraph-1-lg">
-              We unearthed useful insights through analyzing usage data and
-              engaging in user research. Here are the key findings:
-            </h5>
-            <ul class="subtitle-1-lg">
-              <li>
-                A majority of 61% of users opt for using the mobile app instead
-                of the web dashboard to access their banking info.
-              </li>
-              <li>
-                The heat map revealed that users did not interact with the
-                important information section. As a result, they were unaware of
-                the legal details they were getting themselves into.
-              </li>
-              <li>
-                Based on user interviews, it was found that 2 out of 5 (40%) of
-                the users encountered difficulty in accessing the confirmation
-                button.
-              </li>
-              <li>
-                During the user research sessions, it was observed that some
-                participants exhibited a natural inclination to close any pop
-                ups. As a result, they inadvertently closed the consent form and
-                became confused about the subsequent steps they needed to take
-                in their journey. It was like a major "Uh-oh, now what?" moment
-                for them.
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="main-width project-data-sec">
-          <h2 class="title-3-lg">
-            Ideation & Implementation of UX Suggestions
-          </h2>
-          <div class="flex-column gap-24">
-            <div class="project-img-sec">
-              <img
-                src="./images/wireframe-1.png"
-                alt="project wireframe"
-                loading="lazy"
-              />
-              <img
-                src="./images/wire-frame-2.png"
-                alt="project wireframe"
-                loading="lazy"
-              />
-            </div>
-            <p class="subtitle-1-lg">
-              It was vital to me to ensure that all user problems were solved
-              suring this phase. I made sure to offer users the ability to
-              revisit and change their consent choices at any time using a
-              simple back button. I understand that users have the opportunity
-              to modify their preferences at any time through settings, but it
-              is likely that they are too lazy to do so. It’s simply frustrating
-              not being able to change previous choices on the spot.
-              <br /><br />To confirm the user's choices, I used a clear and
-              easily accessible switch element for yes/no questions. This should
-              help condense the appearance of the questions, making them look
-              less intimidating. It should prompt users to finish the form
-              quicker because they perceive the form as smaller. <br /><br />
-              To address the issue with the ambiguity of the legal information,
-              as a part of the journey itself, I showed important information in
-              a seprate page rather than having it hidden under the CTA.
+            <p class="paragraph-1">
+              The competitive analysis was conducted by identifying two direct
+              competitors in the CBD market. Data was gathered by exploring
+              competitors' websites and analyzing their target audience,
+              conversion strategies, user engagement elements, and customer
+              support features. Here's a summary of the key findings:
+            </p>
+            <h5 class="paragraph-1">1. fabcbd.com</h5>
+            <p class="subtitle-1">
+              The website showcases a clean and professional design with
+              effective social proof through user testimonials and magazine
+              logos. They use high-quality product mockups and photos of real
+              individuals using their products, enhancing authenticity.<br />
+              <br />
+
+              The website employs persuasive language to highlight customer
+              benefits and offers intuitive navigation with an advanced mega
+              menu. Helpful features like well-organized FAQs, product
+              recommendations, and a cost calculator for free shipping enhance
+              the user experience.
+            </p>
+
+            <h5 class="paragraph-1">2. fivecbd.com</h5>
+            <p class="subtitle-1">
+              The website impresses with a fun and colorful design, offering
+              simple navigation and a personalized experience through an
+              interactive quiz. Transparent information about product details
+              and ratings builds trust, while grouping products based on use
+              cases adds convenience. They also showcase authentic images of
+              people using their products. <br /><br />
+
+              However, the website lacks sufficient social proof and real people
+              images on the homepage, and the use of low-quality illustrations
+              could be improved for larger screens.
             </p>
           </div>
         </div>
+        <div class="main-width project-data-sec">
+          <h2 class="title-3">Wireframing</h2>
+          <div class="flex-column gap-24 image-container">
+            <img src="images/Drhemp wireframes1.png" alt="" loading="lazy" />
+            <img src="images/Drhemp wireframes2.png" alt="" loading="lazy" />
+          </div>
+        </div>
       </div>
       <div class="main-width project-data-sec">
-        <h2 class="title-3-lg">Polish</h2>
-
+        <h2 class="title-3">Landing Page Redesign</h2>
         <div class="flex-column gap-24">
-          <p class="subtitle-1-lg">
-            After a little bit of back and fourth with the PM and legal team, I
-            polished the agreed upon wireframes.
+          <p class="subtitle-1">
+            The main challenge in designing this website was the restriction on
+            using certain words like "Sleep," "Medication," and "Anxiety," which
+            are crucial in addressing client pain points and making them feel
+            seen.<br /><br />
+
+            I had to get creative and think of ways to tackle client problems
+            without resorting to those prohibited phrases. Luckily, the business
+            had received plenty of glowing reviews from happy customers. I
+            thought, why not let those satisfied clients do the talking for us?
+            If they mentioned those specific phrases in their testimonials, it
+            wouldn't pose any legal issues since it's just a direct quote from
+            them. It turned out to be a great workaround for this situation, and
+            it felt like a win-win. The business could showcase its
+            effectiveness and make customers feel seen, all while staying within
+            the legal boundaries.<br /><br />
+
+            I strategically placed these testimonials in prominent spots to
+            catch the visitors' attention right away. By showcasing real stories
+            of satisfied customers and the benefits they experienced aside their
+            real image with the product they’ve used, I was able to create a
+            strong sense of trust and credibility for the products.
           </p>
-          <div class="project-img-sec">
-            <img
-              src="./images/rak-polish-1.png"
-              alt="project wireframe"
-              loading="lazy"
-            />
-            <img
-              src="./images/rak-polish-2.png"
-              alt="project wireframe"
-              loading="lazy"
-            />
-          </div>
+          <img src="images/onepulse current home.png" alt="" />
+          <p class="subtitle-1">
+            The website's homepage did a pretty good job of introducing how the
+            product works and convincing prospects to buy it, but there's always
+            room for improvement.<br /><br />
+
+            The images on the website, especially the ones on the homepage, they
+            should have a clear purpose and function. Users nowadays expect
+            sharp, clear images that look great. Poor quality screenshots can
+            really impact the user experience and how they perceive the
+            product.<br /><br />
+
+            To really connect with the audience and leave a lasting impression,
+            try including different feature snippets that explain how the
+            product can be used in various scenarios and how it can benefit
+            different businesses. Adding that personal touch can make a big
+            difference!
+          </p>
+
+          <img src="images/drhempmehome.png" alt="" loading="lazy" />
+          <p class="subtitle-1">
+            I used a conversational tone in the copy to make users feel
+            comfortable and at ease while browsing. No walls of text here! I
+            kept it concise and easy to read, especially on mobile devices.
+
+            <br /><br />
+
+            I added transitional CTAs throughout the website to guide users to
+            relevant information without overwhelming them. I also used VideoAsk
+            to add a personal touch and build a connection with potential
+            customers. People love to see real faces, right?
+          </p>
         </div>
       </div>
-      <div class="container pg-purple">
+
+      <div class="container bg-purple">
         <div class="main-width project-data-sec">
-          <h2 class="title-3-lg">Results and Personal Learnings</h2>
-          <div class="flex-column gap-24">
-            <h5 class="paragraph-1-lg">UX Results</h5>
-            <ul class="subtitle-1-lg">
-              <li>
-                In follow-up interviews, users had improved comprehension of
-                what exactly they were consenting to.
-              </li>
-              <li>
-                Users expressed positive feedback towards the new switch method,
-                resulting in increased interaction and engagement with the
-                consent screens.
-              </li>
-              <li>
-                100% of users are now able to easily identify and locate the
-                confirmation CTA without any difficulties.
-              </li>
-            </ul>
-            <h5 class="paragraph-1-lg">Personal Learnings</h5>
-            <ul class="subtitle-1-lg">
-              <li>
-                This was the first time I got to work alongside a legal team.
-                Although it was challenging keeping up with their requests and
-                modifications, I appreciate the opportunity to interpret their
-                inputs from a UX standpoint and properly integrate them into the
-                mobile app.
-              </li>
-            </ul>
+          <h2 class="title-3">Checkout Process Redesign</h2>
+          <div class="flex-column gap-24 image-container">
+            <p class="subtitle-1">
+              Before implementing the dynamic sidebar checkout cart, the
+              website's checkout process had a critical flaw. Whenever users
+              clicked on the “Add to Cart” CTA, they were immediately taken to
+              the checkout page without the opportunity to review their cart or
+              make any adjustments. some users might have been caught off guard
+              or felt rushed, leading to cart abandonment.<br /><br />
+
+              By implementing this dynamic cart, users had more control over
+              their shopping experience, and they could easily continue
+              exploring other products without losing track of what they
+              intended to purchase. <br /><br />
+
+              This improvement reduced friction in the checkout process, making
+              it more user-friendly and reduces the likelihood of cart
+              abandonment from 60% to 39%!
+            </p>
+            <img src="images/Drhemp main page.png" alt="" loading="lazy" />
+            <p class="subtitle-1">
+              I added a progress bar, so customers could see exactly where they
+              were in the checkout journey. <br /><br />
+
+              The text on the "Place Order" CTA button was tweaked to something
+              more explicit, "Proceed to Payment." This made it clearer for
+              customers what the next step in the process would be, reducing
+              uncertainty.<br /><br />
+
+              To present upselling opportunities, the cart was also utilized to
+              show related products that customers might be interested in based
+              on popular or frequently bought-together items.<br /><br />
+
+              And since so many people shop on their phones, I made sure the
+              whole process was mobile-friendly.
+            </p>
+          </div>
+        </div>
+        <div class="main-width project-data-sec">
+          <h2 class="title-3">Menu Redesign</h2>
+          <div class="flex-column gap-24 image-container">
+            <p class="subtitle-1">
+              Before the improvements, the menu lacked organization and
+              simplicity, making it challenging for users to navigate the
+              website efficiently. <br /><br />
+
+              To enhance the menu, a mega menu was implemented for the "Shop"
+              label, grouping products by category and making it easier for
+              users to browse and find what they needed. <br /><br />
+
+              Two simple and straightforward menus, "Why Fab?" and "Learn," were
+              also introduced, providing easy access to essential information
+              about the company and its products. <br /><br />
+
+              These changes streamlined the navigation experience and ensured
+              users could access important pages with just a few clicks.
+            </p>
+            <img src="images/Drhemp main menu.png" alt="" loading="lazy" />
           </div>
         </div>
       </div>
 
+      <div class="main-width project-data-sec">
+        <h2 class="title-3">Mobile Experience Redesign</h2>
+        <div class="flex-column gap-24 image-container">
+          <p class="subtitle-1">
+            Previously, the mobile user experience was subpar, with issues such
+            as text overlap and difficulty reading content due to poor contrast.
+            <br /><br />
+
+            Text overlap was resolved, ensuring that all content displayed
+            correctly on mobile devices. Addressing contrast issues made the
+            text and elements easily readable for users with visual impairments.
+            <br /><br />
+
+            The dynamic sidebar checkout cart was introduced, making it more
+            mobile-friendly and allowing users to view and manage their cart
+            without leaving the page they were on. <br /><br />
+
+            The size of interactive elements, such as buttons, was increased to
+            accommodate touch interactions. This prevented users from
+            accidentally clicking on the wrong item and improved overall
+            navigation efficiency.
+          </p>
+          <img src="images/drhempmemobile.gif" alt="" loading="lazy" />
+        </div>
+      </div>
+      <div class="main-width project-data-sec">
+        <h2 class="title-3">Personal Learnings</h2>
+        <div class="flex-column gap-24 image-container">
+          <p class="subtitle-1">
+            • Dealing with those legal restrictions on certain words was tough,
+            but it pushed me to think outside the box. Finding alternative ways
+            to address client pain points while staying compliant was a real
+            challenge that I embraced.<br /><br />
+
+            • Letting real clients talk about their experiences built trust and
+            made the website so much more credible.
+          </p>
+        </div>
+      </div>
       <div class="main-width other-projects-sec">
-        <a href="./case-study.html"
+        <a href="./rak-case-study.html"
           ><div class="flex-column gap-24">
-            <h5 class="project-title subtitle-1-lg blue-font">
+            <h5 class="project-title subtitle-1 blue-font">
               UI Designer - UX Researcher
             </h5>
-            <h2 class="project-name title-1-lg">RAKBank</h2>
+            <h2 class="project-name title-1">RAKBank</h2>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="141"
@@ -356,12 +507,10 @@
               />
             </svg></div
         ></a>
-        <a href="./case-study.html">
+        <a href="./onepulse-case-study.html">
           <div class="flex-column gap-24">
-            <h5 class="project-title subtitle-1-lg blue-font">
-              UI Designer - UX Researcher
-            </h5>
-            <h2 class="project-name title-1-lg">RAKBank</h2>
+            <h5 class="project-title subtitle-1 blue-font">UX Researcher</h5>
+            <h2 class="project-name title-1">DrHemp</h2>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="141"
@@ -379,12 +528,21 @@
             </svg></div
         ></a>
       </div>
+
+      <div class="main-width">
+        <img
+          src="./images/case study comic story.png"
+          alt=""
+          id="comic-pic"
+          loading="lazy"
+        />
+      </div>
     </section>
 
     <!--contact me section-->
     <section class="contact-me-wrapper">
       <div class="contact-me-sec main-width">
-        <div class="title-1-lg white-font">
+        <div class="title-1 white-font">
           Let’s team up.<br />
           One <span class="line-through">badass</span> design at a time.
         </div>

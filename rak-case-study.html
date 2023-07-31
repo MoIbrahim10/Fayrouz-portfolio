@@ -20,48 +20,89 @@
     <!-- Ohno Blazeface font -->
     <link href="https://use.typekit.net/bfc4ata.css" rel="stylesheet" />
 
-    <title>Fayrouz Portfolio</title>
+    <!--Fav icon-->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicon-16x16.png"
+    />
+    <link rel="manifest" href="images/site.webmanifest" />
+    <title>Fayrouz Portfolio | RAK bank case study</title>
   </head>
   <body>
     <!--Hero section-->
-    <header>
-      <div class="hero-sec">
-        <nav class="btn-font">
-          <ul>
+    <header class="hero-sec">
+      <nav class="main-width btn-font nav">
+        <ul id="nav-menu" class="nav-menu nav-menu-left">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="#about-me">About me</a></li>
+          <li><a href="#">Resume</a></li>
+        </ul>
+        <div class="logo">
+          <img src="./images/Logo black.png" alt="logo" />
+        </div>
+        <div class="nav-menu nav-menu-right action-sec">
+          <button class="btn btn-secondary" type="button">
+            Quote a mission
+          </button>
+        </div>
+      </nav>
+
+      <nav class="nav-mobile btn-font">
+        <div class="logo">
+          <img src="./images/Logo black.png" alt="logo" />
+        </div>
+        <button
+          id="hamburger-menu"
+          class="hamburger-menu"
+          aria-label="Menu"
+          aria-expanded="false"
+          aria-haspopup="true"
+          type="button"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="nav-expanded">
+          <ul class="nav-menu-mobile">
             <li><a href="./index.html">Home</a></li>
-            <li><a href="#">About me</a></li>
+            <li><a href="#about-me">About me</a></li>
             <li><a href="#">Resume</a></li>
+            <li>
+              <button class="btn btn-secondary" type="button">
+                Quote a mission
+              </button>
+            </li>
           </ul>
-          <div class="logo">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="54"
-              height="54"
-              viewBox="0 0 54 54"
-              fill="none"
-            >
-              <circle cx="27" cy="27" r="27" fill="#D9D9D9" />
-            </svg>
-          </div>
-          <div class="action-sec">
-            <button class="btn btn-secondary" type="button">
-              Quote a mission
-            </button>
-          </div>
-        </nav>
-      </div>
+        </div>
+      </nav>
     </header>
 
     <!--Work section-->
     <section class="work-sec">
       <div class="main-width project-container">
         <div class="project-info">
-          <h5 class="project-title subtitle-1-lg blue-font">
+          <h5 class="project-title subtitle-1 blue-font">
             UI Designer - UX Researcher
           </h5>
           <div class="project-main-info">
-            <h2 class="project-name title-1-lg">RAKBank</h2>
-            <p class="project-description paragraph-1-lg">
+            <h2 class="project-name title-1">RAKBank</h2>
+            <p class="project-description paragraph-1">
               Rethinking and perfecting the information consent and opt-in
               confirmation mobile experience.
             </p>
@@ -77,8 +118,8 @@
       </div>
       <div class="main-width project-data-sec">
         <div class="project-overview flex-column gap-24">
-          <h2 class="title-3-lg">Overview</h2>
-          <p class="paragraph-1-lg">
+          <h2 class="title-3">Overview</h2>
+          <p class="paragraph-1">
             The consent process involves obtaining users' explicit permission to
             collect and utilize their personal and financial data, as well as
             enabling them to customize their preferences for various banking
@@ -89,35 +130,35 @@
         </div>
         <div class="project-info">
           <div class="flex-column gap-24">
-            <h2 class="title-3-lg">My Role</h2>
-            <div class="paragraph-1-lg">
+            <h2 class="title-3">My Role</h2>
+            <div class="paragraph-1">
               UX Design, Research, Usability Testing, Visual Design
             </div>
           </div>
           <div class="flex-column gap-24">
-            <h2 class="title-3-lg">Duration</h2>
-            <div class="paragraph-1-lg">6 months</div>
+            <h2 class="title-3">Duration</h2>
+            <div class="paragraph-1">6 months</div>
           </div>
         </div>
       </div>
       <div class="main-width project-data-sec">
-        <h2 class="title-3-lg">Challenge</h2>
-        <p class="paragraph-1-lg">
+        <h2 class="title-3">Challenge</h2>
+        <p class="paragraph-1">
           How might we create an opt-in process to create a seamless and
           user-friendly experience within the mobile application?
         </p>
       </div>
       <div class="main-width project-data-sec">
-        <h2 class="title-3-lg">Problem Statement</h2>
+        <h2 class="title-3">Problem Statement</h2>
         <div class="flex-column gap-24">
-          <p class="paragraph-1-lg">
+          <p class="paragraph-1">
             The challenge lies in designing a consent process that meets the
             requirements of the app while ensuring a seamless and secure user
             experience. It was also challenging to strike a balance between
             legal compliance and user-centricity.
           </p>
-          <h5 class="paragraph-1-lg">1. Inability to modify consent choices</h5>
-          <p class="subtitle-1-lg">
+          <h5 class="paragraph-1">1. Inability to modify consent choices</h5>
+          <p class="subtitle-1">
             The first issue is the lack of flexibility for users to revisit and
             change their consent choices. It was found that there was no clear
             mechanism to revisit and modify consent choices on the spot, which
@@ -125,29 +166,27 @@
             initial decisions.
           </p>
           <div class="qoute-sec">
-            <p class="subtitle-1-lg">
+            <p class="subtitle-1">
               “I made a mistake with my consent choices, but found that there's
               no way to correct it. I felt stuck with my initial decision.”
             </p>
-            <div class="subtitle-1-lg">- User A</div>
+            <div class="subtitle-1">- User A</div>
           </div>
-          <h5 class="paragraph-1-lg">2. Unclear confirmation process</h5>
-          <p class="subtitle-1-lg">
+          <h5 class="paragraph-1">2. Unclear confirmation process</h5>
+          <p class="subtitle-1">
             Users need a clear and easily accessible button or interaction that
             confirms their choices. If the confirmation process is ambiguous or
             hidden within the interface.
           </p>
           <div class="qoute-sec">
-            <p class="subtitle-1-lg">
+            <p class="subtitle-1">
               “The consent process is a bit confusing. I thought I confirmed my
               choices, but then I realized I missed the confirmation button.”
             </p>
-            <div class="subtitle-1-lg">- User B</div>
+            <div class="subtitle-1">- User B</div>
           </div>
-          <h5 class="paragraph-1-lg">
-            3. No clear important information display
-          </h5>
-          <p class="subtitle-1-lg">
+          <h5 class="paragraph-1">3. No clear important information display</h5>
+          <p class="subtitle-1">
             Users feel like they require additional context, explanations, or
             details about the implications of their consent choices to be able
             to correctly answer the questions.
@@ -156,15 +195,15 @@
       </div>
 
       <div class="main-width project-data-sec">
-        <h2 class="title-3-lg">Empathy Map</h2>
+        <h2 class="title-3">Empathy Map</h2>
         <div class="flex-column gap-24">
           <div class="empathy-map-img-sec">
             <img src="./images/empathy-map.png" alt="empathy map" />
           </div>
-          <div class="empathy-map-data">
-            <div>
-              <h5 class="paragraph-1-lg">Pain Points</h5>
-              <ul class="subtitle-1-lg">
+          <div class="split-screen-data">
+            <div class="flex-column gap-24">
+              <h5 class="paragraph-1">Pain Points</h5>
+              <ul class="subtitle-1">
                 <li>
                   Lack of clarity and understanding in the consent process.
                 </li>
@@ -176,9 +215,9 @@
                 </li>
               </ul>
             </div>
-            <div>
-              <h5 class="paragraph-1-lg">Needs</h5>
-              <ul class="subtitle-1-lg">
+            <div class="flex-column gap-24">
+              <h5 class="paragraph-1">Needs</h5>
+              <ul class="subtitle-1">
                 <li>
                   Clear and concise explanations of the consent process and its
                   implications.
@@ -206,15 +245,15 @@
           </div>
         </div>
       </div>
-      <div class="container pg-purple">
+      <div class="container bg-purple">
         <div class="main-width project-data-sec">
-          <h2 class="title-3-lg">Discovery</h2>
+          <h2 class="title-3">Discovery</h2>
           <div class="flex-column gap-24">
-            <h5 class="paragraph-1-lg">
+            <h5 class="paragraph-1">
               We unearthed useful insights through analyzing usage data and
               engaging in user research. Here are the key findings:
             </h5>
-            <ul class="subtitle-1-lg">
+            <ul class="subtitle-1">
               <li>
                 A majority of 61% of users opt for using the mobile app instead
                 of the web dashboard to access their banking info.
@@ -241,9 +280,7 @@
           </div>
         </div>
         <div class="main-width project-data-sec">
-          <h2 class="title-3-lg">
-            Ideation & Implementation of UX Suggestions
-          </h2>
+          <h2 class="title-3">Ideation & Implementation of UX Suggestions</h2>
           <div class="flex-column gap-24">
             <div class="project-img-sec">
               <img
@@ -257,7 +294,7 @@
                 loading="lazy"
               />
             </div>
-            <p class="subtitle-1-lg">
+            <p class="subtitle-1">
               It was vital to me to ensure that all user problems were solved
               suring this phase. I made sure to offer users the ability to
               revisit and change their consent choices at any time using a
@@ -278,10 +315,10 @@
         </div>
       </div>
       <div class="main-width project-data-sec">
-        <h2 class="title-3-lg">Polish</h2>
+        <h2 class="title-3">Polish</h2>
 
         <div class="flex-column gap-24">
-          <p class="subtitle-1-lg">
+          <p class="subtitle-1">
             After a little bit of back and fourth with the PM and legal team, I
             polished the agreed upon wireframes.
           </p>
@@ -299,12 +336,12 @@
           </div>
         </div>
       </div>
-      <div class="container pg-purple">
+      <div class="container bg-purple">
         <div class="main-width project-data-sec">
-          <h2 class="title-3-lg">Results and Personal Learnings</h2>
+          <h2 class="title-3">Results and Personal Learnings</h2>
           <div class="flex-column gap-24">
-            <h5 class="paragraph-1-lg">UX Results</h5>
-            <ul class="subtitle-1-lg">
+            <h5 class="paragraph-1">UX Results</h5>
+            <ul class="subtitle-1">
               <li>
                 In follow-up interviews, users had improved comprehension of
                 what exactly they were consenting to.
@@ -319,8 +356,8 @@
                 confirmation CTA without any difficulties.
               </li>
             </ul>
-            <h5 class="paragraph-1-lg">Personal Learnings</h5>
-            <ul class="subtitle-1-lg">
+            <h5 class="paragraph-1">Personal Learnings</h5>
+            <ul class="subtitle-1">
               <li>
                 This was the first time I got to work alongside a legal team.
                 Although it was challenging keeping up with their requests and
@@ -336,10 +373,10 @@
       <div class="main-width other-projects-sec">
         <a href="./drhempme-case-study.html"
           ><div class="flex-column gap-24">
-            <h5 class="project-title subtitle-1-lg blue-font">
+            <h5 class="project-title subtitle-1 blue-font">
               UI Designer - UX Researcher
             </h5>
-            <h2 class="project-name title-1-lg">DrHemp</h2>
+            <h2 class="project-name title-1">DrHemp</h2>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="141"
@@ -358,8 +395,8 @@
         ></a>
         <a href="./onepulse-case-study.html">
           <div class="flex-column gap-24">
-            <h5 class="project-title subtitle-1-lg blue-font">UX Researcher</h5>
-            <h2 class="project-name title-1-lg">One Pulse</h2>
+            <h5 class="project-title subtitle-1 blue-font">UX Researcher</h5>
+            <h2 class="project-name title-1">One Pulse</h2>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="141"
@@ -377,12 +414,21 @@
             </svg></div
         ></a>
       </div>
+
+      <div class="main-width">
+        <img
+          src="./images/case study comic story.png"
+          alt=""
+          id="comic-pic"
+          loading="lazy"
+        />
+      </div>
     </section>
 
     <!--contact me section-->
     <section class="contact-me-wrapper">
       <div class="contact-me-sec main-width">
-        <div class="title-1-lg white-font">
+        <div class="title-1 white-font">
           Let’s team up.<br />
           One <span class="line-through">badass</span> design at a time.
         </div>

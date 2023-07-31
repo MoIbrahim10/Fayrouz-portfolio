@@ -20,46 +20,88 @@
     <!-- Ohno Blazeface font -->
     <link href="https://use.typekit.net/bfc4ata.css" rel="stylesheet" />
 
-    <title>Fayrouz Portfolio</title>
+    <!--Fav icon-->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicon-16x16.png"
+    />
+    <link rel="manifest" href="images/site.webmanifest" />
+
+    <title>Fayrouz Portfolio | one pulse case study</title>
   </head>
   <body>
     <!--Hero section-->
-    <section>
-      <div class="hero-sec">
-        <nav class="btn-font">
-          <ul>
+    <header class="hero-sec">
+      <nav class="main-width btn-font nav">
+        <ul id="nav-menu" class="nav-menu nav-menu-left">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="#about-me">About me</a></li>
+          <li><a href="#">Resume</a></li>
+        </ul>
+        <div class="logo">
+          <img src="./images/Logo black.png" alt="logo" />
+        </div>
+        <div class="nav-menu nav-menu-right action-sec">
+          <button class="btn btn-secondary" type="button">
+            Quote a mission
+          </button>
+        </div>
+      </nav>
+
+      <nav class="nav-mobile btn-font">
+        <div class="logo">
+          <img src="./images/Logo black.png" alt="logo" />
+        </div>
+        <button
+          id="hamburger-menu"
+          class="hamburger-menu"
+          aria-label="Menu"
+          aria-expanded="false"
+          aria-haspopup="true"
+          type="button"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="nav-expanded">
+          <ul class="nav-menu-mobile">
             <li><a href="./index.html">Home</a></li>
-            <li><a href="#">About me</a></li>
+            <li><a href="#about-me">About me</a></li>
             <li><a href="#">Resume</a></li>
+            <li>
+              <button class="btn btn-secondary" type="button">
+                Quote a mission
+              </button>
+            </li>
           </ul>
-          <div class="logo">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="54"
-              height="54"
-              viewBox="0 0 54 54"
-              fill="none"
-            >
-              <circle cx="27" cy="27" r="27" fill="#D9D9D9" />
-            </svg>
-          </div>
-          <div class="action-sec">
-            <button class="btn btn-secondary" type="button">
-              Quote a mission
-            </button>
-          </div>
-        </nav>
-      </div>
-    </section>
+        </div>
+      </nav>
+    </header>
 
     <!--Work section-->
     <section class="work-sec">
       <div class="main-width project-container">
         <div class="project-info">
-          <h5 class="project-title subtitle-1-lg blue-font">UX Researcher</h5>
+          <h5 class="project-title subtitle-1 purple-font">UX Researcher</h5>
           <div class="project-main-info">
-            <h2 class="project-name title-1-lg">One Pulse</h2>
-            <p class="project-description paragraph-1-lg">
+            <h2 class="project-name title-1">One Pulse</h2>
+            <p class="project-description paragraph-1">
               Identifying issues, potential opportunities and analyzing data to
               boost CRO & UX.
             </p>
@@ -67,7 +109,7 @@
         </div>
         <div class="project-image">
           <img
-            src="./images/onePulse.png"
+            src="./images/onePulse.webp"
             alt="project mockup"
             loading="lazy"
           />
@@ -75,269 +117,453 @@
       </div>
       <div class="main-width project-data-sec">
         <div class="project-overview flex-column gap-24">
-          <h2 class="title-3-lg">Overview</h2>
-          <p class="paragraph-1-lg">
-            The consent process involves obtaining users' explicit permission to
-            collect and utilize their personal and financial data, as well as
-            enabling them to customize their preferences for various banking
-            services and features.<br />
-            100% of users will be required to complete this form in order to
-            gain access to the mobile app.
+          <h2 class="title-3">Overview</h2>
+          <p class="paragraph-1">
+            One Pulse offers an insights platform that helps businesses and
+            brands easily conduct market research and easily find comprehensive
+            answers that empower them to make evidence-based decisions in less
+            time.<br /><br />
+
+            The website serves as a sales tool to attract new customers to test
+            out their platform, with some options to allow users to convert into
+            paying customers.<br /><br />
+            The business’s ultimate goal is to capture qualified brands and
+            increase lead signups and demo requests.
           </p>
         </div>
         <div class="project-info">
           <div class="flex-column gap-24">
-            <h2 class="title-3-lg">My Role</h2>
-            <div class="paragraph-1-lg">
-              UX Design, Research, Usability Testing, Visual Design
+            <h2 class="title-3">My Role</h2>
+            <div class="paragraph-1">
+              UX Research & Audit, Data Analysis, Setting KPIs, Competitive
+              Analysis, UX Suggestions, UI Evaluation
             </div>
           </div>
           <div class="flex-column gap-24">
-            <h2 class="title-3-lg">Duration</h2>
-            <div class="paragraph-1-lg">6 months</div>
+            <h2 class="title-3">Duration</h2>
+            <div class="paragraph-1">1 month</div>
           </div>
         </div>
       </div>
       <div class="main-width project-data-sec">
-        <h2 class="title-3-lg">Challenge</h2>
-        <p class="paragraph-1-lg">
-          How might we create an opt-in process to create a seamless and
-          user-friendly experience within the mobile application?
-        </p>
+        <h2 class="title-3">Challenge</h2>
+        <div class="flex-column gap-24">
+          <p class="paragraph-1">
+            How might we correctly evaluate current user experience to identify
+            areas of improvement and provide data-based suggestions to raise
+            conversions and sales?
+          </p>
+        </div>
       </div>
       <div class="main-width project-data-sec">
-        <h2 class="title-3-lg">Problem Statement</h2>
+        <h2 class="title-3">Problem Statement</h2>
         <div class="flex-column gap-24">
-          <p class="paragraph-1-lg">
-            The challenge lies in designing a consent process that meets the
-            requirements of the app while ensuring a seamless and secure user
-            experience. It was also challenging to strike a balance between
-            legal compliance and user-centricity.
+          <p class="paragraph-1">
+            The website's current UX weaknesses and technical deficiencies are
+            impacting user engagement, lead conversion, and brand perception.
+            Here are the key problems detected:
           </p>
-          <h5 class="paragraph-1-lg">1. Inability to modify consent choices</h5>
-          <p class="subtitle-1-lg">
-            The first issue is the lack of flexibility for users to revisit and
-            change their consent choices. It was found that there was no clear
-            mechanism to revisit and modify consent choices on the spot, which
-            may lead to users experiencing a sense of being locked into their
-            initial decisions.
+          <h5 class="paragraph-1">1. Inaccurate user targeting</h5>
+          <p class="subtitle-1">
+            The website isn’t clear on the target audience. The goal should be
+            to get into users' heads and really understand what they're
+            struggling with. This will eventually help them self-identify as
+            target audience. Tailoring the website to meet users’ pain points
+            and meet their specific needs should make it more appealing.
           </p>
-          <div class="qoute-sec">
-            <p class="subtitle-1-lg">
-              “I made a mistake with my consent choices, but found that there's
-              no way to correct it. I felt stuck with my initial decision.”
-            </p>
-            <div class="subtitle-1-lg">- User A</div>
-          </div>
-          <h5 class="paragraph-1-lg">2. Unclear confirmation process</h5>
-          <p class="subtitle-1-lg">
-            Users need a clear and easily accessible button or interaction that
-            confirms their choices. If the confirmation process is ambiguous or
-            hidden within the interface.
+          <h5 class="paragraph-1">2. Inconsistent traffic</h5>
+          <p class="subtitle-1">
+            According to Google Analytics, traffic has inclined over the past 3
+            months. The traffic curve seems to be inconsistent in terms of
+            growth. It shows constant falls and climbs with no specific trends
+            or behavior patterns. After eliminating bot traffic, a spike in
+            traffic was detected on May 17th, 12th and June 9th due to linkedin
+            driven traffic.
           </p>
-          <div class="qoute-sec">
-            <p class="subtitle-1-lg">
-              “The consent process is a bit confusing. I thought I confirmed my
-              choices, but then I realized I missed the confirmation button.”
-            </p>
-            <div class="subtitle-1-lg">- User B</div>
-          </div>
-          <h5 class="paragraph-1-lg">
-            3. No clear important information display
+          <img
+            src="images/one pulse inconsistent traffic.png"
+            alt=""
+            loading="lazy"
+          />
+          <h5 class="paragraph-1">
+            3. Poor conversion rates and ineffective CTAs
           </h5>
-          <p class="subtitle-1-lg">
-            Users feel like they require additional context, explanations, or
-            details about the implications of their consent choices to be able
-            to correctly answer the questions.
+          <p class="subtitle-1">
+            The current CTA strategy is not effectively converting users into
+            leads and customers. Despite high traffic, CTAs at the bottom of
+            resource pages are failing to generate significant conversions,
+            indicating a need for a more impactful and compelling CTA approach.
           </p>
-        </div>
-      </div>
-
-      <div class="main-width project-data-sec">
-        <h2 class="title-3-lg">Empathy Map</h2>
-        <div class="flex-column gap-24">
-          <div class="empathy-map-img-sec">
-            <img src="./images/empathy-map.png" alt="empathy map" />
-          </div>
-          <div class="empathy-map-data">
-            <div>
-              <h5 class="paragraph-1-lg">Pain Points</h5>
-              <ul class="subtitle-1-lg">
-                <li>
-                  Lack of clarity and understanding in the consent process.
-                </li>
-                <li>Difficulty in modifying consent choices later on.</li>
-                <li>Lengthy and confusing consent forms.</li>
-                <li>Fear of data misuse or privacy breaches.</li>
-                <li>
-                  Uncertainty about the legal implications of consent choices.
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h5 class="paragraph-1-lg">Needs</h5>
-              <ul class="subtitle-1-lg">
-                <li>
-                  Clear and concise explanations of the consent process and its
-                  implications.
-                </li>
-                <li>
-                  Transparency in how data is collected, used, and shared within
-                  the app.
-                </li>
-                <li>
-                  Control and customization options to align with personal
-                  preferences.
-                </li>
-                <li>
-                  Assurance that the app and bank are compliant with privacy
-                  regulations.
-                </li>
-                <li>
-                  Easy and accessible ways to review and modify consent choices.
-                </li>
-                <li>
-                  Confidence that the app respects and safeguards user data.
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="container pg-purple">
-        <div class="main-width project-data-sec">
-          <h2 class="title-3-lg">Discovery</h2>
-          <div class="flex-column gap-24">
-            <h5 class="paragraph-1-lg">
-              We unearthed useful insights through analyzing usage data and
-              engaging in user research. Here are the key findings:
-            </h5>
-            <ul class="subtitle-1-lg">
-              <li>
-                A majority of 61% of users opt for using the mobile app instead
-                of the web dashboard to access their banking info.
-              </li>
-              <li>
-                The heat map revealed that users did not interact with the
-                important information section. As a result, they were unaware of
-                the legal details they were getting themselves into.
-              </li>
-              <li>
-                Based on user interviews, it was found that 2 out of 5 (40%) of
-                the users encountered difficulty in accessing the confirmation
-                button.
-              </li>
-              <li>
-                During the user research sessions, it was observed that some
-                participants exhibited a natural inclination to close any pop
-                ups. As a result, they inadvertently closed the consent form and
-                became confused about the subsequent steps they needed to take
-                in their journey. It was like a major "Uh-oh, now what?" moment
-                for them.
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="main-width project-data-sec">
-          <h2 class="title-3-lg">
-            Ideation & Implementation of UX Suggestions
-          </h2>
-          <div class="flex-column gap-24">
-            <div class="project-img-sec">
-              <img
-                src="./images/wireframe-1.png"
-                alt="project wireframe"
-                loading="lazy"
-              />
-              <img
-                src="./images/wire-frame-2.png"
-                alt="project wireframe"
-                loading="lazy"
-              />
-            </div>
-            <p class="subtitle-1-lg">
-              It was vital to me to ensure that all user problems were solved
-              suring this phase. I made sure to offer users the ability to
-              revisit and change their consent choices at any time using a
-              simple back button. I understand that users have the opportunity
-              to modify their preferences at any time through settings, but it
-              is likely that they are too lazy to do so. It’s simply frustrating
-              not being able to change previous choices on the spot.
-              <br /><br />To confirm the user's choices, I used a clear and
-              easily accessible switch element for yes/no questions. This should
-              help condense the appearance of the questions, making them look
-              less intimidating. It should prompt users to finish the form
-              quicker because they perceive the form as smaller. <br /><br />
-              To address the issue with the ambiguity of the legal information,
-              as a part of the journey itself, I showed important information in
-              a seprate page rather than having it hidden under the CTA.
+          <img
+            src="images/one pulse ineffective CTAs.png"
+            alt=""
+            loading="lazy"
+          />
+          <div class="qoute-sec">
+            <p class="subtitle-1">
+              <span class="info-icon">💡</span>
+              These aren’t actual conversions, just users who make it to the
+              demo booking page or the resource gate. Gathered, these CTAs lead
+              to only 21 clicks from 1,873 page views. This leaves major room
+              for improvement in this area.
             </p>
           </div>
+          <h5 class="paragraph-1">4. Usability and security issues</h5>
+          <p class="subtitle-1">
+            The website's Lighthouse performance scorecard highlights subpar
+            technical performance, including low scores in accessibility and
+            SEO. These issues contribute to slow loading times and detract from
+            the overall user experience, potentially impacting search engine
+            rankings and traffic. <br /><br />Some usability issues were
+            detected through Google's Core Web Vitals standards and HTTPS
+            security. These also seem to be compromising the user experience and
+            search engine rankings.
+          </p>
+          <img
+            src="images/one pulse Usability and security issues.png"
+            alt=""
+            loading="lazy"
+          />
         </div>
       </div>
-      <div class="main-width project-data-sec">
-        <h2 class="title-3-lg">Polish</h2>
-
-        <div class="flex-column gap-24">
-          <p class="subtitle-1-lg">
-            After a little bit of back and fourth with the PM and legal team, I
-            polished the agreed upon wireframes.
-          </p>
-          <div class="project-img-sec">
-            <img
-              src="./images/rak-polish-1.png"
-              alt="project wireframe"
-              loading="lazy"
-            />
-            <img
-              src="./images/rak-polish-2.png"
-              alt="project wireframe"
-              loading="lazy"
-            />
+      <div class="container bg-purple">
+        <div class="main-width project-data-sec">
+          <h2 class="title-3">KPIs</h2>
+          <div class="flex-column gap-24">
+            <h5 class="paragraph-1">
+              The following success indicators will be used to evaluate the
+              effectiveness of the audit:
+            </h5>
+            <ul class="subtitle-1">
+              <li>
+                Targeting specific user personas, their pain points, and
+                providing them with enough helpful information to lead change
+                within their organization.
+              </li>
+              <li>
+                Identifying and fixing all weak points of the user journey by
+                closely guiding potential customers and pushing them to convert.
+              </li>
+              <li>
+                Enhancing marketing tactics to shift brand perception into a
+                digital solution rather than a survey provider.
+              </li>
+              <li>
+                Helping users understand the product, it’s features and how to
+                best leverage them for maximum results for themselves and/or
+                their clients.
+              </li>
+              <li>
+                Design the website to keep users engaged and interested,
+                resulting in longer average session durations and deeper
+                interactions.
+              </li>
+              <li>
+                Craft compelling and clear CTAs that guide users to take desired
+                actions.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="main-width project-data-sec">
+          <h2 class="title-3">Competitive Analysis</h2>
+          <div class="flex-column gap-24">
+            <h5 class="paragraph-1">
+              The competitive analysis was conducted by identifying five direct
+              and indirect competitors in the insights platform market. Data was
+              gathered by exploring competitors' websites and analyzing their
+              target audience, conversion strategies, user engagement elements,
+              and customer support features. Here's a summary of the key
+              findings:
+            </h5>
+            <ul class="subtitle-1">
+              <li>
+                Four out of five competitors prominently display client
+                testimonials on their websites. This strategy is used to build
+                trust and credibility by showcasing positive feedback and
+                experiences from satisfied customers.
+              </li>
+              <li>
+                All competitors use live chat features to engage with users in
+                real-time, answer their questions, and guide them through the
+                sales funnel. This interactive approach can lead to better user
+                support and improved conversion rates.
+              </li>
+              <li>
+                Surprisingly, none of the competitors utilize product
+                demonstration videos on their websites. Incorporating videos can
+                be an opportunity for One Pulse to stand out and effectively
+                showcase the platform's features and functionalities.
+              </li>
+              <li>
+                All competitors use high-quality product mockups to introduce
+                and highlight their platform's features. These visually
+                appealing representations help users understand the platform's
+                capabilities more effectively.
+              </li>
+              <li>
+                Four out of five competitors feature pictures of real people on
+                their websites, likely to create a sense of authenticity and
+                human connection with the audience.
+              </li>
+              <li>
+                The majority of competitors use gated resources such as
+                white-papers, case studies, or eBooks to capture user
+                information. This strategy helps in lead generation and building
+                a database of potential customers.
+              </li>
+            </ul>
           </div>
         </div>
       </div>
-      <div class="container pg-purple">
+      <div class="main-width project-data-sec">
+        <h2 class="title-3">Review of core templates</h2>
+        <div class="flex-column gap-24">
+          <h5 class="paragraph-1">Current "Home" template</h5>
+          <img src="images/onepulse current home.png" alt="" />
+          <p class="subtitle-1">
+            The website's homepage did a pretty good job of introducing how the
+            product works and convincing prospects to buy it, but there's always
+            room for improvement.<br /><br />
+
+            The images on the website, especially the ones on the homepage, they
+            should have a clear purpose and function. Users nowadays expect
+            sharp, clear images that look great. Poor quality screenshots can
+            really impact the user experience and how they perceive the
+            product.<br /><br />
+
+            To really connect with the audience and leave a lasting impression,
+            try including different feature snippets that explain how the
+            product can be used in various scenarios and how it can benefit
+            different businesses. Adding that personal touch can make a big
+            difference!
+          </p>
+          <h5 class="paragraph-1">Current "Product Feature" template</h5>
+          <img src="images/one pulse product feature.png" alt="" />
+          <p class="subtitle-1">
+            A product’s sales page can make or break a conversion. This is a
+            chance to convince visitors to consider the product and hopefully,
+            convert.<br /><br />
+
+            A user is on this page if they want to see more of the product and
+            understand how it works. This is where you want to use the most
+            social proof. Instead of sourceless quotes, use tailored client
+            testimonials displaying a company logo and a real photo of clients
+            to increase trust and credibility (ideally tied to a case study).<br /><br />
+
+            After listing a set of features, you may want to use a transitional
+            CTA that promotes the free trial. I also recommend adding shorter
+            snippets where you simply explain how the product works in 3
+            straightforward steps, as well as how to get started with one
+            pulse.<br /><br />
+
+            Use storytelling to assist visitors in making their purchase
+            decision by helping them put themselves in a client’s shoes and view
+            the product from their perspective. Use visuals and simple copy to
+            create a narrative that makes a connection between thr product and
+            why should prospects use it. Understand why a certain organization
+            needs your product and target that pain point to appeal to their
+            needs.<br /><br />
+
+            I recommend including more images of real people, with more
+            information about how your customers are using the product, and the
+            benefits they’re experiencing from it.
+          </p>
+          <h5 class="paragraph-1">Current "Use Cases" template</h5>
+          <img src="images/onepulse current use case.png" alt="" />
+          <p class="subtitle-1">
+            The blog page should be aimed at providing the users at the top of
+            the funnel with the most important information covering any and all
+            areas of the service.<br /><br />
+
+            As it stands, the blog template does a good job of providing enough
+            educational information that guides visitors from the top to the
+            bottom of the funnel.<br /><br />
+
+            This is where prospects would go to see how the product works for
+            their specific use case. The purpose of this page is to connect with
+            the target audience and help them make a decision.<br /><br />
+
+            There’s nothing as powerful as actually speaking to your audience.
+            Start by illustrating your prospects’ problems to convey how well
+            you understand their pain points and end by describing how your
+            service meets their needs. Because most people would rather explore
+            media than read text, remember to extensively use high quality
+            mockups and videos of your product.
+          </p>
+        </div>
+      </div>
+
+      <div class="container bg-purple">
         <div class="main-width project-data-sec">
-          <h2 class="title-3-lg">Results and Personal Learnings</h2>
+          <h2 class="title-3">Final UX Suggestions</h2>
           <div class="flex-column gap-24">
-            <h5 class="paragraph-1-lg">UX Results</h5>
-            <ul class="subtitle-1-lg">
-              <li>
-                In follow-up interviews, users had improved comprehension of
-                what exactly they were consenting to.
-              </li>
-              <li>
-                Users expressed positive feedback towards the new switch method,
-                resulting in increased interaction and engagement with the
-                consent screens.
-              </li>
-              <li>
-                100% of users are now able to easily identify and locate the
-                confirmation CTA without any difficulties.
-              </li>
-            </ul>
-            <h5 class="paragraph-1-lg">Personal Learnings</h5>
-            <ul class="subtitle-1-lg">
-              <li>
-                This was the first time I got to work alongside a legal team.
-                Although it was challenging keeping up with their requests and
-                modifications, I appreciate the opportunity to interpret their
-                inputs from a UX standpoint and properly integrate them into the
-                mobile app.
-              </li>
-            </ul>
+            <p class="paragraph-1">
+              Based on the insights from the data analysis, competitive analysis
+              and the current state of the website pages, these are the final UX
+              suggestions to enhance the overall user experience and boost
+              conversion (It should be noted that the client was originally
+              presented with 20+ suggestions):
+            </p>
+            <div class="flex-column gap-24">
+              <div class="split-screen-data">
+                <div class="flex-column gap-24">
+                  <h5 class="paragraph-1">
+                    1. Restructure content to reduce information density and
+                    create engaging experiences
+                  </h5>
+                  <p class="subtitle-1">
+                    Remember to always disclose only necessary information. For
+                    example, if a user works in brand tracking, they do not need
+                    to be distracted by the other use case categories. One way
+                    to solve this problem is to use interactive tabs to reveal
+                    only the essentials. A user can then choose to proceed to
+                    dive deeper and learn more about their case of choice.
+                  </p>
+                </div>
+                <div class="flex-column gap-24">
+                  <h5 class="paragraph-1">
+                    2. Use visual storytelling to create an immersive user
+                    experience
+                  </h5>
+                  <p class="subtitle-1">
+                    Telling a story rather than simply listing facts is a great
+                    way to infuse empathy and create a positive user experience.
+                    It doesn’t have to be complex. Use simple words and
+                    one-liner content. Make your visitor the main character and
+                    narrate the events that they experience before, during and
+                    after using your product.
+                  </p>
+                </div>
+              </div>
+              <div class="split-screen-data">
+                <div class="flex-column gap-24">
+                  <h5 class="paragraph-1">
+                    3. Only use high-resolution screenshots and mockups
+                  </h5>
+                  <p class="subtitle-1">
+                    Human beings are highly visual creatures who are able to
+                    process visual information almost instantly. 90% of all
+                    information that we perceive and that gets transmitted to
+                    our brains is visual. Image quality can truly make or break
+                    your user experience and interface. Especially when it comes
+                    to introducing your product. Nowadays, high-quality media is
+                    a must-have, not an option.
+                  </p>
+                </div>
+                <div class="flex-column gap-24">
+                  <h5 class="paragraph-1">
+                    4. Create video case studies to guide users within the
+                    evaluation stage of the funnel
+                  </h5>
+                  <p class="subtitle-1">
+                    You already know the value of social proof and how people
+                    are more likely to invest in a service that is highly rated
+                    - as opposed to one without any social proof. Prospects want
+                    to watch other clients with similar backgrounds and pain
+                    points discussing their experience with your service. This
+                    can be one of the most powerful tools on your belt if you
+                    put time and effort into your case studies.
+                  </p>
+                </div>
+              </div>
+              <div class="split-screen-data">
+                <div class="flex-column gap-24">
+                  <h5 class="paragraph-1">
+                    5. Talk about prospects’ problems and how you solve them
+                  </h5>
+                  <p class="subtitle-1">
+                    Users must be able to easily determine whether your product
+                    meets their needs and why they should do business with you.
+                    Show them you are able to empathize with them by listing
+                    their problems and how you are able to solve them.
+                  </p>
+                </div>
+                <div class="flex-column gap-24">
+                  <h5 class="paragraph-1">
+                    6. Sell users on outcomes not services
+                  </h5>
+                  <p class="subtitle-1">
+                    You don’t want to sell the shovel, you want to sell the hole
+                    the shovel makes. Put the user’s goals at the forefront of
+                    your UX strategy by presenting them with the outcomes they
+                    want to achieve. Your job is to connect the dots between
+                    what they want and how you can get them there in the most
+                    efficient way possible.
+                  </p>
+                </div>
+              </div>
+              <div class="split-screen-data">
+                <div class="flex-column gap-24">
+                  <h5 class="paragraph-1">
+                    7. Create targeted experience so different personas can
+                    learn about how they can best utilize your service
+                  </h5>
+                  <p class="subtitle-1">
+                    Every customer’s expertise with tech is different, so their
+                    related problems too. Ask them about their struggles with
+                    the product’s understanding and offer them a personalized
+                    solution.
+                  </p>
+                </div>
+                <div class="flex-column gap-24">
+                  <h5 class="paragraph-1">
+                    8. Create bite-sized tips and tricks videos to target
+                    top-of-funnel leads
+                  </h5>
+                  <p class="subtitle-1">
+                    Analyze your audience and create short content offering them
+                    the best tips and tricks that help them solve real problems
+                    and get where they want in the shortest time frame possible.
+                    Your customers are interested in the final results they can
+                    instantly achieve.
+                  </p>
+                </div>
+              </div>
+              <div class="split-screen-data">
+                <div class="flex-column gap-24">
+                  <h5 class="paragraph-1">
+                    9. Use more genuine images of people to create a deeper
+                    emotional connection
+                  </h5>
+                  <p class="subtitle-1">
+                    Images are crucial whether it is to convey a message, tell a
+                    story, or evoke an emotion. Seeing smiling people triggers
+                    an automatic response in humans that release pleasurable
+                    chemicals in our brain, like dopamine and serotonin. Adding
+                    photos of actual people SMILING and enjoying their
+                    experience is a literal hack to making people trust you
+                    more.
+                  </p>
+                </div>
+                <div class="flex-column gap-24">
+                  <h5 class="paragraph-1">
+                    10. Tell users exactly what they can expect from contacting
+                    you
+                  </h5>
+                  <p class="subtitle-1">
+                    Our brains find comfort in familiarity. Tell people what to
+                    expect out of your call with them. Before getting on a call
+                    with you, your prospects need you to tell them about their
+                    problem and how you can help them to fix it. Present your
+                    process in detail. It may help both parties if you divide
+                    the experience into steps. Use pictures and short sentences
+                    to familiarize people with the idea of speaking with you.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
 
       <div class="main-width other-projects-sec">
-        <a href="./case-study.html"
+        <a href="./rak-case-study.html"
           ><div class="flex-column gap-24">
-            <h5 class="project-title subtitle-1-lg blue-font">
+            <h5 class="project-title subtitle-1 blue-font">
               UI Designer - UX Researcher
             </h5>
-            <h2 class="project-name title-1-lg">RAKBank</h2>
+            <h2 class="project-name title-1">RAKBank</h2>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="141"
@@ -354,12 +580,12 @@
               />
             </svg></div
         ></a>
-        <a href="./case-study.html">
+        <a href="./drhempme-case-study.html">
           <div class="flex-column gap-24">
-            <h5 class="project-title subtitle-1-lg blue-font">
+            <h5 class="project-title subtitle-1 blue-font">
               UI Designer - UX Researcher
             </h5>
-            <h2 class="project-name title-1-lg">RAKBank</h2>
+            <h2 class="project-name title-1">DrHemp</h2>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="141"
@@ -377,12 +603,21 @@
             </svg></div
         ></a>
       </div>
+
+      <div class="main-width">
+        <img
+          src="./images/case study comic story.png"
+          alt=""
+          id="comic-pic"
+          loading="lazy"
+        />
+      </div>
     </section>
 
     <!--contact me section-->
     <section class="contact-me-wrapper">
       <div class="contact-me-sec main-width">
-        <div class="title-1-lg white-font">
+        <div class="title-1 white-font">
           Let’s team up.<br />
           One <span class="line-through">badass</span> design at a time.
         </div>
