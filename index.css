@@ -159,6 +159,8 @@ body {
 }
 
 .info {
+  flex: 1;
+  width: 50%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -172,11 +174,8 @@ body {
 
 
 .about-me-image {
-  position: relative;
-  min-width: 529px;
-  min-height: 755px;
-  width: 529px;
-  height: 755px;
+  width: 50%;
+
 }
 
 .about-me-image img {
@@ -375,10 +374,13 @@ body {
 
   .about-me-sec {
     display: flex;
+    align-items: center;
     gap: 14px;
   }
 
   .info {
+    flex: 1;
+    width: 50%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -392,11 +394,7 @@ body {
 
 
   .about-me-image {
-    position: relative;
-    min-width: 529px;
-    min-height: 755px;
-    width: 529px;
-    height: 755px;
+    width: 50%;
   }
 
   .about-me-image img {
@@ -476,10 +474,13 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 24px;
+    overflow: hidden;
   }
 
   .shot-container {
-    width: 412px;
+    flex: 1;
+    min-width: calc(33.33% - 48px);
     height: 240px;
     border: 2px solid var(--color-black);
     background: var(--color-white);
@@ -519,7 +520,24 @@ body {
   }
 }
 
+@keyframes pulse {
+  0% {
+    opacity: 0.5;
+  }
 
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0.5;
+  }
+}
+
+.low-quality {
+  filter: blur(8px);
+  animation: pulse 1.5s infinite;
+}
 
 @media screen and (max-width: 1100px) {
   .hero-image-container {
@@ -540,6 +558,8 @@ body {
   .project-image {
     width: 100%;
   }
+
+
 }
 
 @media screen and (max-width: 980px) {
@@ -552,6 +572,26 @@ body {
   .hero-image-container {
     transform: scale(0.9);
     left: calc(44% - 18vw);
+  }
+
+  .shot-container {
+    min-width: calc(55% - 54px);
+  }
+
+  .dribbble-shots #shots {
+    gap: 32px;
+  }
+
+  .about-me-sec {
+    flex-direction: column;
+  }
+
+  .info {
+    width: 100%;
+  }
+
+  .about-me-image {
+    width: 100%;
   }
 }
 
@@ -568,6 +608,12 @@ body {
     transform: scale(0.9);
     left: calc(33% - 18vw);
     top: calc(30vw - 150px);
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .shot-container {
+    min-width: 100%;
   }
 }
 
@@ -605,6 +651,33 @@ body {
     display: flex;
     align-items: center;
   }
+}
+
+@media screen and (max-width: 520px) {
+  #next, #prev {
+    width: 60px;
+    height: 60px;
+    padding: 0;
+  }
+
+  .dribbble-shots-action a {
+    height: 60px;
+    padding: 26px;
+  }
+
+  #next svg, #prev svg {
+    width: 19px;
+    height: 19px;
+  }
+
+  .project-info-data a, .project-info-data a button {
+    width: 100%;
+  }
+
+  .project-info-data button {
+    padding: 20px 0;
+  }
+
 }
 
 @media screen and (max-width: 390px) {
@@ -680,8 +753,6 @@ body {
 
 
   /* **************************** */
-
-
   .dribbble-sec {
     gap: 40px;
   }
@@ -705,11 +776,14 @@ body {
     min-height: 59px;
   }
 
-  .dribbble-shots-action a, .dribbble-shots-action button {
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  .dribbble-shots-action a {
+    width: 160px;
   }
 
+}
+
+@media screen and (max-width: 327px) {
+  .dribbble-shots-action a {
+    width: 192px;
+  }
 }

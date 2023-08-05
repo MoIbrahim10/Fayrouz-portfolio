@@ -22,10 +22,19 @@ function showShots() {
       link.href = shots[index].html_url;
       link.target = '_blank';
       const img = document.createElement('img');
-      img.src = shots[index].images.hidpi;
+      img.src = shots[index].images.teaser;
       img.alt = shots[index].title;
       img.title = shots[index].title;
       img.loading = 'lazy';
+      img.className = 'low-quality';
+
+      let highResImage = new Image();
+      highResImage.src = shots[index].images.hidpi;
+      highResImage.onload = () => {
+        img.src = highResImage.src;
+        img.classList.remove('low-quality');
+      };
+
       link.appendChild(img);
       shotContainer.appendChild(link);
       fragment.appendChild(shotContainer);
