@@ -4,11 +4,6 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="initial-scale=1, width=device-width" />
 
-    <link rel="stylesheet" href="./global.css" />
-    <link rel="stylesheet" href="./nav-style.css" />
-    <link rel="stylesheet" href="./case-studies.css" />
-    <link rel="stylesheet" href="./contact-me.css" />
-
     <!-- Cabin font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,6 +14,13 @@
 
     <!-- Ohno Blazeface font -->
     <link href="https://use.typekit.net/bfc4ata.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./nav-style.css" />
+    <link rel="stylesheet" href="./case-studies.css" />
+    <link rel="stylesheet" href="./contact-me.css" />
+
+    <script src="navbar.js" defer></script>
 
     <!--Fav icon-->
     <link
@@ -39,7 +41,7 @@
       href="images/favicon-16x16.png"
     />
     <link rel="manifest" href="images/site.webmanifest" />
-    <title>Fayrouz Portfolio | RAK bank case study</title>
+    <title>RAK bank case study | Fayrouz Portfolio</title>
   </head>
   <body>
     <!--Hero section-->
@@ -51,7 +53,9 @@
           <li><a href="#">Resume</a></li>
         </ul>
         <div class="logo">
-          <img src="./images/Logo black.png" alt="logo" />
+          <a href="index.html">
+            <img src="./images/Logo black.png" alt="logo" />
+          </a>
         </div>
         <div class="nav-menu nav-menu-right action-sec">
           <button class="btn btn-secondary" type="button">
@@ -62,7 +66,9 @@
 
       <nav class="nav-mobile btn-font">
         <div class="logo">
-          <img src="./images/Logo black.png" alt="logo" />
+          <a href="index.html">
+            <img src="./images/Logo black.png" alt="logo" />
+          </a>
         </div>
         <button
           id="hamburger-menu"
@@ -95,49 +101,53 @@
 
     <!--Work section-->
     <section class="work-sec">
-      <div class="main-width project-container">
-        <div class="project-info">
-          <h5 class="project-title subtitle-1 blue-font">
-            UI Designer - UX Researcher
-          </h5>
-          <div class="project-main-info">
-            <h2 class="project-name title-1">RAKBank</h2>
-            <p class="project-description paragraph-1">
-              Rethinking and perfecting the information consent and opt-in
-              confirmation mobile experience.
-            </p>
-          </div>
-        </div>
-        <div class="project-image">
-          <img
-            src="./images/RakBank.webp"
-            alt="project mockup"
-            loading="lazy"
-          />
-        </div>
-      </div>
-      <div class="main-width project-data-sec">
-        <div class="project-overview flex-column gap-24">
-          <h2 class="title-3">Overview</h2>
-          <p class="paragraph-1">
-            The consent process involves obtaining users' explicit permission to
-            collect and utilize their personal and financial data, as well as
-            enabling them to customize their preferences for various banking
-            services and features.<br />
-            100% of users will be required to complete this form in order to
-            gain access to the mobile app.
-          </p>
-        </div>
-        <div class="project-info">
-          <div class="flex-column gap-24">
-            <h2 class="title-3">My Role</h2>
-            <div class="paragraph-1">
-              UX Design, Research, Usability Testing, Visual Design
+      <div class="main-width">
+        <div class="project-container">
+          <div class="project-info">
+            <h5 class="project-title subtitle-1 blue-font">
+              UI Designer - UX Researcher
+            </h5>
+            <div class="project-main-info">
+              <h2 class="project-name title-1">RAK<wbr />Bank</h2>
+              <p class="project-description paragraph-1">
+                Rethinking and perfecting the information consent and opt-in
+                confirmation mobile experience.
+              </p>
             </div>
           </div>
-          <div class="flex-column gap-24">
-            <h2 class="title-3">Duration</h2>
-            <div class="paragraph-1">6 months</div>
+          <div class="project-image rak-project-image">
+            <img
+              src="./images/RakBank.webp"
+              alt="project mockup"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="main-width">
+        <div class="project-data-sec">
+          <div class="project-overview flex-column gap-24">
+            <h2 class="title-3">Overview</h2>
+            <p class="paragraph-1">
+              The consent process involves obtaining users' explicit permission
+              to collect and utilize their personal and financial data, as well
+              as enabling them to customize their preferences for various
+              banking services and features.<br />
+              100% of users will be required to complete this form in order to
+              gain access to the mobile app.
+            </p>
+          </div>
+          <div class="project-info">
+            <div class="flex-column gap-24">
+              <h2 class="title-3">My Role</h2>
+              <div class="paragraph-1">
+                UX Design, Research, Usability Testing, Visual Design
+              </div>
+            </div>
+            <div class="flex-column gap-24">
+              <h2 class="title-3">Duration</h2>
+              <div class="paragraph-1">6 months</div>
+            </div>
           </div>
         </div>
       </div>
@@ -376,13 +386,14 @@
             <h5 class="project-title subtitle-1 blue-font">
               UI Designer - UX Researcher
             </h5>
-            <h2 class="project-name title-1">DrHemp</h2>
+            <h2 class="project-name title-1">Dr<wbr />Hemp</h2>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="141"
               height="22"
               viewBox="0 0 141 22"
               fill="none"
+              id="left-arrow"
             >
               <path
                 d="M19.75 19.1113L2 11.3613M2 11.3613L19.75 2.36133M2 11.3613H139"
@@ -403,6 +414,7 @@
               height="22"
               viewBox="0 0 141 22"
               fill="none"
+              id="right-arrow"
             >
               <path
                 d="M121.25 2.36133L139 10.1113M139 10.1113L121.25 19.1113M139 10.1113L2 10.1113"
