@@ -2,11 +2,11 @@
 
 Hello and welcome! This repository contains the source code for Fayrouz's personal UX/UI portfolio. As her dedicated developer, I've aimed to create a site that's a reflection of her incredible talent as a UX/UI designer.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/cdf5b648-334f-4551-aba8-80fc89ef061e/Untitled.png)
+![Untitled](images/herosec.png)
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/c32e7a36-c098-45af-873f-07ede0e21479/Untitled.png)
+![Untitled](images/worksec.png)
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/e54ddd94-003b-447e-9223-1bfdb969e6b7/Untitled.png)
+![Untitled](images/aboutmesec.png)
 
 ## **Features**
 
@@ -32,13 +32,13 @@ Hello and welcome! This repository contains the source code for Fayrouz's person
 ## **Getting Started**
 
 1. **Clone the repository**:
-    
-    ```bash
-    git clone https://github.com/MoIbrahim10/Fayrouz-portfolio
-    ```
-    
+
+   ```bash
+   git clone https://github.com/MoIbrahim10/Fayrouz-portfolio
+   ```
+
 2. **Launch the site**:
-Open **`index.html`** in your favorite browser.
+   Open **`index.html`** in your favorite browser.
 
 ## **Contributing**
 
@@ -54,10 +54,10 @@ For any questions, feedback, or suggestions, please feel free to reach out:
 ## **Client Details**
 
 - Fayrouz
-    - **[Email](mailto:fayrouzdakrouri@gmail.com)**
-    - **[LinkedIn](https://www.linkedin.com/in/fayrouzdak/)**
-    - **[Dribbble](https://dribbble.com/fayrouzdak)**
-    - **[Upwork](https://www.upwork.com/freelancers/~0187d34adc84a50b3f)**
+  - **[Email](mailto:fayrouzdakrouri@gmail.com)**
+  - **[LinkedIn](https://www.linkedin.com/in/fayrouzdak/)**
+  - **[Dribbble](https://dribbble.com/fayrouzdak)**
+  - **[Upwork](https://www.upwork.com/freelancers/~0187d34adc84a50b3f)**
 
 ## **License**
 
