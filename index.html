@@ -54,7 +54,15 @@
     <link href="https://use.typekit.net/bfc4ata.css" rel="stylesheet" />
 
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="./dist/bundle-index.css" />
+    <link
+      rel="preload"
+      href="./dist/bundle-index.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript
+      ><link rel="stylesheet" href="./dist/bundle-index.css"
+    /></noscript>
 
     <!-- Menu icon -->
     <link
@@ -147,9 +155,19 @@
         <div class="main-width hero-title main-title-1 flex-column">
           <span class="main-title-2">My name is</span>
           <span> Fayrouz</span>
-        </div>
-        <div class="hero-image-container">
-          <img src="./images/Hero.webp" alt="hero image" loading="lazy" />
+
+          <div class="hero-image-container">
+            <picture>
+              <source
+                media="(max-width: 390px)"
+                srcset="./images/Hero-sm.webp"
+              />
+              <img
+                src="./images/Hero.webp"
+                alt="Fayrouz depicted as a superhero combating bad UX design"
+              />
+            </picture>
+          </div>
         </div>
       </div>
       <div class="pink-hero">
@@ -190,7 +208,7 @@
             <div class="project-image">
               <img
                 src="./images/RakBank.webp"
-                alt="project mockup"
+                alt="Rakbank project mockup displaying communication preferences on an iPhone screen."
                 loading="lazy"
               />
             </div>
@@ -219,7 +237,7 @@
             <div class="project-image">
               <img
                 src="./images/onePulse.webp"
-                alt="project mockup"
+                alt="One Pulse project mockup displaying the home page on a laptop screen."
                 loading="lazy"
               />
             </div>
@@ -248,14 +266,18 @@
             <div class="project-image">
               <img
                 src="./images/Drhemp.webp"
-                alt="project mockup"
+                alt="Dr Hemp Me project mockup displaying the home page on a laptop screen."
                 loading="lazy"
               />
             </div>
           </div>
         </div>
         <div class="main-width comic comic1">
-          <img src="./images/comic1.webp" alt="comic" loading="lazy" />
+          <img
+            src="./images/comic1.webp"
+            alt="Comic panel with text 'Did you hear that noise?', hinting at a case study for the next part of the story."
+            loading="lazy"
+          />
         </div>
       </section>
 
@@ -361,13 +383,13 @@
           <div class="about-me-image">
             <img
               src="./images/fayrouz2.webp"
-              alt="fayrouz image"
+              alt="Actual photograph of Fayrouz revealed upon hover."
               loading="lazy"
               class="real-image"
             />
             <img
               src="./images/illustration-img.webp"
-              alt="about me image"
+              alt="Illustration of Fayrouz portrayed as a superhero. Hover to reveal true identity."
               loading="lazy"
               class="hover-image"
             />
