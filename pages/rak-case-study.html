@@ -4,6 +4,27 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="initial-scale=1, width=device-width" />
 
+    <!-- SEO meta tags -->
+    <meta
+      name="description"
+      content="Dive deep into Fayrouz's design process. Explore detailed case studies showcasing challenges, solutions, and outcomes in UI/UX projects."
+    />
+    <meta
+      name="keywords"
+      content="UI Design, UX Design, Portfolio, Fayrouz, Case Study, Projects"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Fayrouz" />
+    <meta http-equiv="Content-Language" content="en" />
+
+    <!-- Theme color -->
+    <meta
+      name="theme-color"
+      media="(prefers-color-scheme: light), (prefers-color-scheme: dark)"
+      content="#6646D2"
+    />
+
+    <!-- Fonts -->
     <!-- Cabin font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,13 +36,13 @@
     <!-- Ohno Blazeface font -->
     <link href="https://use.typekit.net/bfc4ata.css" rel="stylesheet" />
 
-    <!--Styles-->
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="../dist/bundle-case-studies.css" />
 
     <!--Scripts-->
     <script src="../scripts/navbar.js" defer></script>
 
-    <!--Fav icon-->
+    <!--Favicons-->
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -98,14 +119,14 @@
       </nav>
     </header>
 
-    <!--Work section-->
-    <section class="work-sec">
-      <div class="main-width">
+    <main class="work-sec">
+      <!--Work section-->
+      <section class="main-width">
         <div class="project-container">
           <div class="project-info">
-            <h5 class="project-title subtitle-1 blue-font">
+            <div class="project-title subtitle-1 blue-font">
               UI Designer - UX Researcher
-            </h5>
+            </div>
             <div class="project-main-info">
               <h2 class="project-name title-1">RAK<wbr />Bank</h2>
               <p class="project-description paragraph-1">
@@ -115,15 +136,26 @@
             </div>
           </div>
           <div class="project-image rak-project-image">
-            <img
-              src="../images/RakBank.webp"
-              alt="project mockup"
-              loading="lazy"
-            />
+            <picture>
+              <source
+                media="(max-width: 390px)"
+                srcset="../images/RakBank-sm.webp"
+              />
+              <source
+                media="(max-width: 1100px)"
+                srcset="../images/RakBank-md.webp"
+              />
+              <img
+                id="rak-image"
+                src="../images/RakBank-lg.webp"
+                alt="Rakbank project mockup displaying communication preferences on an iPhone screen."
+                loading="lazy"
+              />
+            </picture>
           </div>
         </div>
-      </div>
-      <div class="main-width">
+      </section>
+      <section class="main-width">
         <div class="project-data-sec">
           <div class="project-overview flex-column gap-24">
             <h2 class="title-3">Overview</h2>
@@ -149,15 +181,15 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="main-width project-data-sec">
+      </section>
+      <section class="main-width project-data-sec">
         <h2 class="title-3">Challenge</h2>
         <p class="paragraph-1">
           How might we create an opt-in process to create a seamless and
           user-friendly experience within the mobile application?
         </p>
-      </div>
-      <div class="main-width project-data-sec">
+      </section>
+      <section class="main-width project-data-sec">
         <h2 class="title-3">Problem Statement</h2>
         <div class="flex-column gap-24">
           <p class="paragraph-1">
@@ -201,13 +233,24 @@
             to correctly answer the questions.
           </p>
         </div>
-      </div>
+      </section>
 
-      <div class="main-width project-data-sec">
+      <section class="main-width project-data-sec">
         <h2 class="title-3">Empathy Map</h2>
         <div class="flex-column gap-24">
           <div class="empathy-map-img-sec">
-            <img src="../images/empathy-map.png" alt="empathy map" />
+            <picture>
+              <source
+                media="(max-width: 660px)"
+                srcset="../images/empathy-map-sm.webp"
+              />
+              <img
+                id="rak-image"
+                src="../images/empathy-map.webp"
+                alt="Empathy map for UX, displaying sticky notes on a board, capturing user feelings, thoughts, and insights."
+                loading="lazy"
+              />
+            </picture>
           </div>
           <div class="split-screen-data">
             <div class="flex-column gap-24">
@@ -253,8 +296,8 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="container bg-purple">
+      </section>
+      <section class="container bg-purple">
         <div class="main-width project-data-sec">
           <h2 class="title-3">Discovery</h2>
           <div class="flex-column gap-24">
@@ -292,16 +335,36 @@
           <h2 class="title-3">Ideation & Implementation of UX Suggestions</h2>
           <div class="flex-column gap-24">
             <div class="project-img-sec">
-              <img
-                src="../images/wireframe-1.png"
-                alt="project wireframe"
-                loading="lazy"
-              />
-              <img
-                src="../images/wire-frame-2.png"
-                alt="project wireframe"
-                loading="lazy"
-              />
+              <picture>
+                <source
+                  media="(max-width: 390px)"
+                  srcset="../images/rak-wireframe-1-sm.webp"
+                />
+                <source
+                  media="(max-width: 660px)"
+                  srcset="../images/rak-wireframe-1-md.webp"
+                />
+                <img
+                  src="../images/rak-wireframe-1.webp"
+                  alt="project wireframe"
+                  loading="lazy"
+                />
+              </picture>
+              <picture>
+                <source
+                  media="(max-width: 390px)"
+                  srcset="../images/rak-wireframe-2-sm.webp"
+                />
+                <source
+                  media="(max-width: 660px)"
+                  srcset="../images/rak-wireframe-2-md.webp"
+                />
+                <img
+                  src="../images/rak-wireframe-2.webp"
+                  alt="project wireframe"
+                  loading="lazy"
+                />
+              </picture>
             </div>
             <p class="subtitle-1">
               It was vital to me to ensure that all user problems were solved
@@ -322,8 +385,8 @@
             </p>
           </div>
         </div>
-      </div>
-      <div class="main-width project-data-sec">
+      </section>
+      <section class="main-width project-data-sec">
         <h2 class="title-3">Polish</h2>
 
         <div class="flex-column gap-24">
@@ -332,20 +395,40 @@
             polished the agreed upon wireframes.
           </p>
           <div class="project-img-sec">
-            <img
-              src="../images/rak-polish-1.png"
-              alt="project wireframe"
-              loading="lazy"
-            />
-            <img
-              src="../images/rak-polish-2.png"
-              alt="project wireframe"
-              loading="lazy"
-            />
+            <picture>
+              <source
+                media="(max-width: 390px)"
+                srcset="../images/rak-polish-1-sm.webp"
+              />
+              <source
+                media="(max-width: 660px)"
+                srcset="../images/rak-polish-1-md.webp"
+              />
+              <img
+                src="../images/rak-polish-1.webp"
+                alt="Rakbank project mockup displaying communication preferences page on an iPhone screen."
+                loading="lazy"
+              />
+            </picture>
+            <picture>
+              <source
+                media="(max-width: 390px)"
+                srcset="../images/rak-polish-2-sm.webp"
+              />
+              <source
+                media="(max-width: 660px)"
+                srcset="../images/rak-polish-2-md.webp"
+              />
+              <img
+                src="../images/rak-polish-2.webp"
+                alt="Rakbank project mockup displaying communication preferences page on an iPhone screen."
+                loading="lazy"
+              />
+            </picture>
           </div>
         </div>
-      </div>
-      <div class="container bg-purple">
+      </section>
+      <section class="container bg-purple">
         <div class="main-width project-data-sec">
           <h2 class="title-3">Results and Personal Learnings</h2>
           <div class="flex-column gap-24">
@@ -377,9 +460,9 @@
             </ul>
           </div>
         </div>
-      </div>
+      </section>
 
-      <div class="main-width other-projects-sec">
+      <section class="main-width other-projects-sec">
         <a href="../pages/drhempme-case-study.html"
           ><div class="flex-column gap-24">
             <h5 class="project-title subtitle-1 blue-font">
@@ -424,27 +507,46 @@
               />
             </svg></div
         ></a>
-      </div>
+      </section>
 
-      <div class="main-width">
-        <img
-          src="../images/case-study-comic-story.png"
-          alt=""
-          id="comic-pic"
-          loading="lazy"
-        />
-      </div>
-    </section>
-
-    <!--contact me section-->
-    <section class="contact-me-wrapper">
-      <div class="contact-me-sec main-width">
-        <div class="title-1 white-font">
-          Let’s team up.<br />
-          One <span class="line-through">badass</span> design at a time.
+      <section class="main-width">
+        <picture>
+          <source
+            media="(max-width: 390px)"
+            srcset="../images/case-study-comic-story-390.webp"
+          />
+          <source
+            media="(max-width: 610px)"
+            srcset="../images/case-study-comic-story-610.webp"
+          />
+          <source
+            media="(max-width: 810px)"
+            srcset="../images/case-study-comic-story-810.webp"
+          />
+          <source
+            media="(max-width: 980px)"
+            srcset="../images/case-study-comic-story-980.webp"
+          />
+          <img
+            src="../images/case-study-comic-story.webp"
+            alt="Comic illustration of superhero Fayrouz holding a weapon, a stick with a hand at the front, pointing towards a laptop displaying a website, symbolizing her fight against bad UX on websites."
+            id="comic-pic"
+            loading="lazy"
+          />
+        </picture>
+      </section>
+    </main>
+    <footer>
+      <!--contact me section-->
+      <section class="contact-me-wrapper">
+        <div class="contact-me-sec main-width">
+          <div class="title-1 white-font">
+            Let’s team up.<br />
+            One <span class="line-through">badass</span> design at a time.
+          </div>
+          <button class="btn btn-primary" type="button">Quote a mission</button>
         </div>
-        <button class="btn btn-primary" type="button">Quote a mission</button>
-      </div>
-    </section>
+      </section>
+    </footer>
   </body>
 </html>

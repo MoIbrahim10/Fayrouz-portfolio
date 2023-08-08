@@ -134,7 +134,13 @@ div>ul {
   gap: 24px;
 }
 
-.project-img-sec img {
+
+.project-img-sec picture {
+  display: inline-block;
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
+  width: fit-content;
+
   max-width: 408px;
   width: calc(50% - 12px);
 }
@@ -209,7 +215,11 @@ div>ul {
 }
 
 
+
 @media screen and (max-width: 920px) {
+  .work-sec, .work-sec .container {
+    gap: 120px;
+  }
 
   .project-container {
     flex-direction: column;
@@ -296,6 +306,9 @@ div>ul {
 }
 
 @media screen and (max-width: 500px) {
+  .work-sec, .work-sec .container {
+    gap: 64px;
+  }
 
   .other-projects-sec {
     justify-content: center;
@@ -312,6 +325,8 @@ div>ul {
 }
 
 @media screen and (max-width: 390px) {
+
+
   #left-arrow, #right-arrow {
     width: 80px;
     height: 20px;

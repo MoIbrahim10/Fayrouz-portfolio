@@ -1,13 +1,47 @@
+// Configuration
+const API_URL = 'https://api.dribbble.com/v2/user/shots?access_token=71ea86ce6e4bd4f9d17a99feab8310d5e7053814da8ca251cbeb85026cf0e4fb';
+
 let shots = [];
 let indices = [0, 1, 2];
 
+async function fetchData(url) {
+  try {
+    const res = await fetch(url);
+    if (!res.ok) throw new Error("Couldn't fetch data.");
+    const data = await res.json();
+    return data;
+  } catch (error) {
+    console.error("Error fetching data:", error);
+    return [];
+  }
+}
 
-async function fetchData() {
-  const res = await fetch(
-    'https://api.dribbble.com/v2/user/shots?access_token=71ea86ce6e4bd4f9d17a99feab8310d5e7053814da8ca251cbeb85026cf0e4fb'
-  );
-  const data = await res.json();
-  return data;
+function createShotElement(shot) {
+  const shotContainer = document.createElement('div');
+  shotContainer.className = 'shot-container';
+  
+  const link = document.createElement('a');
+  link.href = shot.html_url;
+  link.target = '_blank';
+
+  const img = document.createElement('img');
+  img.src = shot.images.teaser;
+  img.alt = shot.title;
+  img.title = shot.title;
+  img.loading = 'lazy';
+  img.className = 'low-quality';
+
+  const highResImage = new Image();
+  highResImage.src = shot.images.two_x;
+  highResImage.onload = () => {
+    img.src = highResImage.src;
+    img.classList.remove('low-quality');
+  };
+
+  link.appendChild(img);
+  shotContainer.appendChild(link);
+  
+  return shotContainer;
 }
 
 function showShots() {
@@ -16,28 +50,7 @@ function showShots() {
 
   indices.forEach((index) => {
     if (shots[index]) {
-      let shotContainer = document.createElement('div');
-      shotContainer.className = 'shot-container';
-      const link = document.createElement('a');
-      link.href = shots[index].html_url;
-      link.target = '_blank';
-      const img = document.createElement('img');
-      img.src = shots[index].images.teaser;
-      img.alt = shots[index].title;
-      img.title = shots[index].title;
-      img.loading = 'lazy';
-      img.className = 'low-quality';
-
-      let highResImage = new Image();
-      highResImage.src = shots[index].images.hidpi;
-      highResImage.onload = () => {
-        img.src = highResImage.src;
-        img.classList.remove('low-quality');
-      };
-
-      link.appendChild(img);
-      shotContainer.appendChild(link);
-      fragment.appendChild(shotContainer);
+      fragment.appendChild(createShotElement(shots[index]));
     }
   });
   container.innerHTML = '';
@@ -64,7 +77,8 @@ document.getElementById('prev').addEventListener('click', (e) => {
   }
 });
 
-fetchData().then((data) => {
-  shots = data;
+// Immediately-invoked function expression (IIFE) to start the app
+(async function init() {
+  shots = await fetchData(API_URL);
   showShots();
-});
+})();

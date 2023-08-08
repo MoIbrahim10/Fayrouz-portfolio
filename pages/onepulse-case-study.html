@@ -4,6 +4,27 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="initial-scale=1, width=device-width" />
 
+    <!-- SEO meta tags -->
+    <meta
+      name="description"
+      content="Dive deep into Fayrouz's design process. Explore detailed case studies showcasing challenges, solutions, and outcomes in UI/UX projects."
+    />
+    <meta
+      name="keywords"
+      content="UI Design, UX Design, Portfolio, Fayrouz, Case Study, Projects"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Fayrouz" />
+    <meta http-equiv="Content-Language" content="en" />
+
+    <!-- Theme color -->
+    <meta
+      name="theme-color"
+      media="(prefers-color-scheme: light), (prefers-color-scheme: dark)"
+      content="#6646D2"
+    />
+
+    <!-- Fonts -->
     <!-- Cabin font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -100,8 +121,8 @@
     </header>
 
     <!--Work section-->
-    <section class="work-sec">
-      <div class="main-width">
+    <main class="work-sec">
+      <section class="main-width">
         <div class="project-container">
           <div class="project-info">
             <h5 class="project-title subtitle-1 purple-font">UX Researcher</h5>
@@ -114,15 +135,25 @@
             </div>
           </div>
           <div class="project-image">
-            <img
-              src="../images/onePulse.webp"
-              alt="project mockup"
-              loading="lazy"
-            />
+            <picture>
+              <source
+                media="(max-width: 390px)"
+                srcset="../images/onePulse-sm.webp"
+              />
+              <source
+                media="(max-width: 1100px)"
+                srcset="../images/onePulse-md.webp"
+              />
+              <img
+                src="../images/onePulse-lg.webp"
+                alt="One Pulse project mockup displaying the home page on a laptop screen."
+                loading="lazy"
+              />
+            </picture>
           </div>
         </div>
-      </div>
-      <div class="main-width project-data-sec">
+      </section>
+      <section class="main-width project-data-sec">
         <div class="project-overview flex-column gap-24">
           <h2 class="title-3">Overview</h2>
           <p class="paragraph-1">
@@ -151,8 +182,8 @@
             <div class="paragraph-1">1 month</div>
           </div>
         </div>
-      </div>
-      <div class="main-width project-data-sec">
+      </section>
+      <section class="main-width project-data-sec">
         <h2 class="title-3">Challenge</h2>
         <div class="flex-column gap-24">
           <p class="paragraph-1">
@@ -161,8 +192,8 @@
             conversions and sales?
           </p>
         </div>
-      </div>
-      <div class="main-width project-data-sec">
+      </section>
+      <section class="main-width project-data-sec">
         <h2 class="title-3">Problem Statement</h2>
         <div class="flex-column gap-24">
           <p class="paragraph-1">
@@ -187,11 +218,25 @@
             traffic was detected on May 17th, 12th and June 9th due to linkedin
             driven traffic.
           </p>
-          <img
-            src="../images/one-pulse-inconsistent-traffic.png"
-            alt=""
-            loading="lazy"
-          />
+          <picture>
+            <source
+              media="(max-width: 390px)"
+              srcset="../images/one-pulse-inconsistent-traffic-sm.webp"
+            />
+            <source
+              media="(max-width: 660px)"
+              srcset="../images/one-pulse-inconsistent-traffic-md2.webp"
+            />
+            <source
+              media="(max-width: 920px)"
+              srcset="../images/one-pulse-inconsistent-traffic-md1.webp"
+            />
+            <img
+              src="../images/one-pulse-inconsistent-traffic-o.webp"
+              alt="Google Analytics screenshot displaying inconsistent traffic for the One Pulse website."
+              loading="lazy"
+            />
+          </picture>
           <h5 class="paragraph-1">
             3. Poor conversion rates and ineffective CTAs
           </h5>
@@ -202,8 +247,8 @@
             indicating a need for a more impactful and compelling CTA approach.
           </p>
           <img
-            src="../images/one-pulse-ineffective-CTAs.png"
-            alt=""
+            src="../images/one-pulse-ineffective-CTAs-o.webp"
+            alt="Screenshot of the One Pulse website showing an ineffective 'Soma' CTA that contributes to a lower conversion rate."
             loading="lazy"
           />
           <div class="qoute-sec">
@@ -227,13 +272,13 @@
             search engine rankings.
           </p>
           <img
-            src="../images/one-pulse-Usability-and-security-issues.png"
-            alt=""
+            src="../images/one-pulse-Usability-and-security-issues.webp"
+            alt="Lighthouse performance scorecard for the One Pulse website, indicating poor scores in accessibility and SEO, which can lead to slow loading times and negatively affect the user experience."
             loading="lazy"
           />
         </div>
-      </div>
-      <div class="container bg-purple">
+      </section>
+      <section class="container bg-purple">
         <div class="main-width project-data-sec">
           <h2 class="title-3">KPIs</h2>
           <div class="flex-column gap-24">
@@ -322,12 +367,16 @@
             </ul>
           </div>
         </div>
-      </div>
-      <div class="main-width project-data-sec">
+      </section>
+      <section class="main-width project-data-sec">
         <h2 class="title-3">Review of core templates</h2>
         <div class="flex-column gap-24">
           <h5 class="paragraph-1">Current "Home" template</h5>
-          <img src="../images/onepulse-current-home.png" alt="" />
+          <img
+            src="../images/onepulse-current-home.png"
+            alt="Screenshot of the current 'Home' template from the One Pulse website."
+            loading="lazy"
+          />
           <p class="subtitle-1">
             The website's homepage did a pretty good job of introducing how the
             product works and convincing prospects to buy it, but there's always
@@ -346,7 +395,11 @@
             difference!
           </p>
           <h5 class="paragraph-1">Current "Product Feature" template</h5>
-          <img src="../images/one-pulse-product-feature.png" alt="" />
+          <img
+            src="../images/tinywow_one-pulse-product-feature.webp"
+            alt="Screenshot of the current 'Product Feature' template from the One Pulse website."
+            loading="lazy"
+          />
           <p class="subtitle-1">
             A product’s sales page can make or break a conversion. This is a
             chance to convince visitors to consider the product and hopefully,
@@ -377,7 +430,11 @@
             benefits they’re experiencing from it.
           </p>
           <h5 class="paragraph-1">Current "Use Cases" template</h5>
-          <img src="../images/onepulse-current-use-case.png" alt="" />
+          <img
+            src="../images/onepulse-current-use-case.webp"
+            alt="Screenshot of the current 'Use Cases' template from the One Pulse website."
+            loading="lazy"
+          />
           <p class="subtitle-1">
             The blog page should be aimed at providing the users at the top of
             the funnel with the most important information covering any and all
@@ -399,9 +456,9 @@
             mockups and videos of your product.
           </p>
         </div>
-      </div>
+      </section>
 
-      <div class="container bg-purple">
+      <section class="container bg-purple">
         <div class="main-width project-data-sec">
           <h2 class="title-3">Final UX Suggestions</h2>
           <div class="flex-column gap-24">
@@ -562,9 +619,9 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
-      <div class="main-width other-projects-sec">
+      <section class="main-width other-projects-sec">
         <a href="../pages/rak-case-study.html"
           ><div class="flex-column gap-24">
             <h5 class="project-title subtitle-1 blue-font">
@@ -609,20 +666,38 @@
               />
             </svg></div
         ></a>
-      </div>
+      </section>
 
-      <div class="main-width">
-        <img
-          src="../images/case-study-comic-story.png"
-          alt=""
-          id="comic-pic"
-          loading="lazy"
-        />
-      </div>
-    </section>
+      <section class="main-width">
+        <picture>
+          <source
+            media="(max-width: 390px)"
+            srcset="../images/case-study-comic-story-390.webp"
+          />
+          <source
+            media="(max-width: 610px)"
+            srcset="../images/case-study-comic-story-610.webp"
+          />
+          <source
+            media="(max-width: 810px)"
+            srcset="../images/case-study-comic-story-810.webp"
+          />
+          <source
+            media="(max-width: 980px)"
+            srcset="../images/case-study-comic-story-980.webp"
+          />
+          <img
+            src="../images/case-study-comic-story.webp"
+            alt="Comic illustration of superhero Fayrouz holding a weapon, a stick with a hand at the front, pointing towards a laptop displaying a website, symbolizing her fight against bad UX on websites."
+            id="comic-pic"
+            loading="lazy"
+          />
+        </picture>
+      </section>
+    </main>
 
     <!--contact me section-->
-    <section class="contact-me-wrapper">
+    <footer class="contact-me-wrapper">
       <div class="contact-me-sec main-width">
         <div class="title-1 white-font">
           Let’s team up.<br />
@@ -630,6 +705,6 @@
         </div>
         <button class="btn btn-primary" type="button">Quote a mission</button>
       </div>
-    </section>
+    </footer>
   </body>
 </html>
