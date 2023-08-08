@@ -86,7 +86,7 @@ nav a {
   gap: 24px;
 }
 
-.project-data-sec * {
+.project-data-sec *:not(:first-child) {
   width: 100%;
 }
 
