@@ -20,13 +20,8 @@
     <!-- Theme color -->
     <meta
       name="theme-color"
-      media="(prefers-color-scheme: light)"
+      media="(prefers-color-scheme: light), (prefers-color-scheme: dark)"
       content="#6646D2"
-    />
-    <meta
-      name="theme-color"
-      media="(prefers-color-scheme: dark)"
-      content="#000000"
     />
 
     <!-- Open Graph meta tags for social media -->
@@ -59,21 +54,17 @@
     <link href="https://use.typekit.net/bfc4ata.css" rel="stylesheet" />
 
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="./global.css" />
-    <link rel="stylesheet" href="./nav-style.css" />
-    <link rel="stylesheet" href="./index.css" />
-    <link rel="stylesheet" href="./contact-me.css" />
+    <link rel="stylesheet" href="./dist/bundle-index.css" />
 
     <!-- Menu icon -->
-
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
 
     <!-- Scripts -->
-    <script src="navbar.js" defer></script>
-    <script src="script.js" defer></script>
+    <script src="scripts/navbar.js" defer></script>
+    <script src="scripts/script.js" defer></script>
 
     <!-- Favicons -->
     <link
@@ -108,7 +99,9 @@
             <li><a href="#">Resume</a></li>
           </ul>
           <div class="logo">
-            <img src="./images/Logo White.png" alt="logo" />
+            <a href="#">
+              <img src="./images/Logo-White.png" alt="logo" />
+            </a>
           </div>
           <div class="nav-menu nav-menu-right action-sec">
             <button class="btn btn-primary" type="button">
@@ -119,7 +112,9 @@
 
         <nav class="nav-mobile btn-font">
           <div class="logo">
-            <img src="./images/Logo White.png" alt="logo" />
+            <a href="#">
+              <img src="./images/Logo-White.png" alt="logo" />
+            </a>
           </div>
           <button
             id="hamburger-menu"
@@ -185,7 +180,7 @@
                   confirmation mobile UX.
                 </p>
               </div>
-              <a href="./rak-case-study.html"
+              <a href="pages/rak-case-study.html"
                 ><button type="button" class="btn btn-secondary">
                   View case study
                 </button></a
@@ -214,7 +209,7 @@
                   to boost CRO & UX.
                 </p>
               </div>
-              <a href="./onepulse-case-study.html">
+              <a href="pages/onepulse-case-study.html">
                 <button type="button" class="btn btn-secondary">
                   View case study
                 </button></a
@@ -243,7 +238,7 @@
                   enhancing usability.
                 </p>
               </div>
-              <a href="./drhempme-case-study.html">
+              <a href="pages/drhempme-case-study.html">
                 <button type="button" class="btn btn-secondary">
                   View case study
                 </button></a
@@ -371,7 +366,7 @@
             class="real-image"
           />
           <img
-            src="./images/illustration img.webp"
+            src="./images/illustration-img.webp"
             alt="about me image"
             loading="lazy"
             class="hover-image"

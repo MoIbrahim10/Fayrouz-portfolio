@@ -1,0 +1,25 @@
+{
+  "name": "fayrouz-portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "navbar.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MoIbrahim10/Fayrouz-portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MoIbrahim10/Fayrouz-portfolio/issues"
+  },
+  "homepage": "https://github.com/MoIbrahim10/Fayrouz-portfolio#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1"
+  }
+}
