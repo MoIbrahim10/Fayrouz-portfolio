@@ -564,20 +564,28 @@ body {
   .project-container {
     flex-wrap: wrap;
     gap: 16px;
+    padding: 0;
   }
+
+
 
   .project-info {
     width: 100%;
-    padding: 0 38px 0 0;
+    padding: 60px 38px 0;
   }
 
   .project-image {
     width: 100%;
   }
 
+  .project-container .rak-image {
+    align-self: center;
+  }
+
   #rak-image {
     object-fit: scale-down;
   }
+
 
 }
 

@@ -38,6 +38,10 @@ nav a {
   color: var(--color-white);
 }
 
+.nav-menu-mobile li:last-child {
+  margin: 24px 0;
+}
+
 nav a:hover {
   background: var(--color-gradient-1);
   -webkit-background-clip: text;
@@ -177,6 +181,7 @@ nav button {
 
   .nav-expanded.responsive-bar {
     display: flex;
+    border-bottom: 10px solid var(--color-white);
   }
 
   .hamburger-menu {
