@@ -10,7 +10,9 @@
   background: var(--color-white);
 }
 
-.nav-expanded ul li:not(:last-child) a {
+
+
+.nav-expanded ul li:not(:last-child) a, .nav ul li a {
   color: var(--color-black);
 }
 
@@ -18,10 +20,14 @@
   border-bottom: 10px solid var(--color-black);
 }
 
-.nav-menu-mobile>li:last-child>a:hover {
+.nav-menu-mobile>li:last-child>a:hover, nav .action-sec a:hover {
   -webkit-text-fill-color: var(--color-white);
   -moz-text-fill-color: var(--color-white);
   color: var(--color-white) !important;
+}
+
+nav a.btn {
+  display: flex;
 }
 
 .hero-sec {

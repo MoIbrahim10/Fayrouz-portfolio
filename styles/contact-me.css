@@ -14,3 +14,7 @@
   align-items: flex-start;
   gap: 48px;
 }
+
+.contact-me-sec a {
+  text-decoration: none;
+}

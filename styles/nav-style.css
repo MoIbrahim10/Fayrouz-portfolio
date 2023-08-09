@@ -38,9 +38,7 @@ nav a {
   color: var(--color-white);
 }
 
-.nav-menu-mobile li:last-child {
-  margin: 24px 0;
-}
+
 
 nav a:hover {
   background: var(--color-gradient-1);
@@ -160,7 +158,7 @@ nav button {
 
   .nav-mobile {
     display: flex;
-    padding: 0 40px;
+    padding: 0 80px;
   }
 
   .nav-expanded {
@@ -186,5 +184,12 @@ nav button {
 
   .hamburger-menu {
     display: block;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .nav-mobile {
+    display: flex;
+    padding: 0 20px;
   }
 }

@@ -9,6 +9,16 @@ body {
   overflow-x: hidden;
 }
 
+nav a.btn {
+  display: flex;
+}
+
+.action-sec a:hover {
+  -webkit-text-fill-color: var(--color-white);
+  -moz-text-fill-color: var(--color-white);
+  color: var(--color-white) !important;
+}
+
 .black-hero {
   background: var(--color-black);
   display: flex;
